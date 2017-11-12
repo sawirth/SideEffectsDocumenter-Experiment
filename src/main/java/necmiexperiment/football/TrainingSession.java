@@ -33,7 +33,7 @@ public class TrainingSession {
         int trainerSkill = this.trainer.getTrainerSkill();
         int trainerMotivation = this.trainer.getMotivation();
         int trainingGroundQuality = this.trainingGround.getQuality();
-        int playerCondition = this.player.playerCondition.getPlayerCondition();
+        int playerCondition = this.player.getPlayerCondition().getPlayerCondition();
         double total = (playerMotivation * skillEffort) + trainerMotivation + trainerSkill + trainingGroundQuality + playerCondition;
         return total;
     }

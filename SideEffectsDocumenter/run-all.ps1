@@ -11,7 +11,7 @@
 # ========= SETTINGS =========
 # --------- PURANO ---------
 $java7 = 'C:\Program Files\Java\jdk1.7.0_79\bin\java' #set to JDK 1.7
-$puranoCP = 'C:\Users\Sandro\Desktop\Purano\*;' #folder pointing to Purano .jar
+$puranoCP = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\SideEffectsDocumenter\*;' #folder pointing to Purano .jar
 
 # Specify the root path to the .class files or the folder of the .jar file which should be analyzed
 # If you want to analyze a jar file, add the path to the file with a '\*' at the end
