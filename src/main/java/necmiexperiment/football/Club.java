@@ -6,8 +6,9 @@ public class Club {
     public TrainingGround trainingGround;
     private President president;
     private Equipment equipment;
+    private Janitor janitor;
 
-    public Club(String name, President president, String equipmentName) {
+    public Club(String name, President president, String equipmentName, String janitor) {
         if (name.equals("Barcelona")) {
             this.name = name;
             this.team = team = new TeamConstructor().createTeamBarcelona();
@@ -23,6 +24,8 @@ public class Club {
             this.president = president;
             this.trainingGround = new TrainingGround("Zidaner", 90, this.equipment);
         }
+
+        this.janitor = new Janitor(janitor);
     }
 
     public Team getTeam() {
@@ -35,5 +38,9 @@ public class Club {
 
     public TrainingGround getTrainingGround() {
         return trainingGround;
+    }
+
+    public Janitor getJanitor() {
+        return janitor;
     }
 }

@@ -12,3 +12,4 @@ test.utils.FileWriterUtils
 
 # Methods
 test.NativeImpl.nativeCalculation
+task1.Test.IOCall

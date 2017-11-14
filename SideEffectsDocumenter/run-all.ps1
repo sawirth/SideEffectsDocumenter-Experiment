@@ -29,6 +29,7 @@ $jar = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\SideEf
 $javaRoot = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\src\main\java\' # root of .java files
 $showExtended = True # True = detailed info, False = just Purity info
 $ioBlacklistPath = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\SideEffectsDocumenter\IO_blacklist.txt'
+$replaceOriginalFiles = True
 
 # ======== End of Settings ========
 # =================================
@@ -38,7 +39,7 @@ $ioBlacklistPath = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Exper
 $purano = 'jp.ac.osakau.farseerfc.purano.reflect.ClassFinder'
 $puranoPath = $outputPath + '\Purano-Result.json'
 $cp = $puranoCP + $homeDir
-
+$doRunPurano = True
 if($showExtended) 
 {
     & $java7 -cp $cp $purano --pkg $pkg -o $outputPath -t $templatePath --extended
@@ -48,6 +49,8 @@ else
     & $java7 -cp $cp $purano --pkg $pkg -o $outputPath -t $templatePath
 }
 
+
+
 # Second: start SideEffectsDocumenter
 $main = 'main.Main'
-& $java8 -jar $jar $javaRoot -p $puranoPath -e $showExtended -io $ioBlacklistPath
+& $java8 -jar $jar $javaRoot -p $puranoPath -e $showExtended -io $ioBlacklistPath -r $replaceOriginalFiles
