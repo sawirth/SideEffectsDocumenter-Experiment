@@ -60,10 +60,13 @@ fabric.properties
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
 *.iml
+modules.xml
+.idea/misc.xml
 *.ipr
 
 ### Java ###
 # Compiled class file
+*.class
 
 # Log file
 *.log
@@ -75,7 +78,6 @@ fabric.properties
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 *.zip
@@ -105,5 +107,3 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # End of https://www.gitignore.io/api/java,gradle,intellij
-Purano-result.html
-Purano-Result.json
