@@ -10,8 +10,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Grass {
+
     public int grassType;
+
     public int grassLength;
+
     public int grassQuality;
 
     public Grass(int grassType, int grassLength) {
@@ -24,11 +27,11 @@ public class Grass {
     }
 
     public void upgradeGrassType(int type) {
-        try (Stream<String> stream = Files.lines(Paths.get("resources/task1.txt"))){
+        try (Stream<String> stream = Files.lines(Paths.get("resources/task1.txt"))) {
             List<String> elements = stream.collect(Collectors.toList());
             type = Integer.parseInt(elements.get(0));
-        } catch(IOException ex) {
-            //do nothing
+        } catch (IOException ex) {
+        //do nothing
         }
         this.grassType = type;
     }

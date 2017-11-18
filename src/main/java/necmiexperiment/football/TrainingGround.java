@@ -14,12 +14,11 @@ public class TrainingGround {
     }
 
     public void upgrade(int upgradeType) {
-        switch (upgradeType) {
+        switch(upgradeType) {
             case 1:
                 getEquipment().upgradeEquipment(10);
                 getPitch().upgradePitch(PitchType.type1());
                 break;
-
             case 2:
                 getEquipment().upgradeEquipment(10);
                 getPitch().upgradePitch(PitchType.type2());

@@ -23,12 +23,11 @@ public class PrivateLife {
         if (this.nightLife > 10) {
             player.getInjured("injured");
         } else {
-
         }
     }
 
     public void visitFamily() {
-        this.family+= 10;
+        this.family += 10;
     }
 
     public void talkToPress() {

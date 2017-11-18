@@ -14,9 +14,7 @@ public class ProfessionalLife {
     }
 
     public double getAverage() {
-        double avg = (this.relationsWithManager + this.relationsWithPresident + this.relationsWithTrainer +
-                this.relationsWithTeamMates) / 10;
-
+        double avg = (this.relationsWithManager + this.relationsWithPresident + this.relationsWithTrainer + this.relationsWithTeamMates) / 10;
         return avg;
     }
 }

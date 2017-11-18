@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Janitor {
+
     private String name;
 
     public Janitor(String name) {
@@ -18,7 +19,7 @@ public class Janitor {
         try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             writer.write("pitch mowed by " + this.name);
         } catch (IOException ex) {
-            //do nothing
+        //do nothing
         }
     }
 }
