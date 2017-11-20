@@ -17,7 +17,7 @@ $puranoCP = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\S
 # If you want to analyze a jar file, add the path to the file with a '\*' at the end
 $homeDir = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\build\classes\main\'
 
-$pkg = 'task2' # Specify the package which should be analyzed
+$pkg = 'necmiexperiment' # Specify the package which should be analyzed
 $outputPath = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment' # Specify the directory where the purano results should be saved
 $templatePath = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\SideEffectsDocumenter\templates' # Folder of the HTML Templates
 $showExtended = False # True = all analyzed classes, False = only user classes in result

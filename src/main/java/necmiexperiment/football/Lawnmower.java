@@ -15,6 +15,6 @@ public class Lawnmower {
         }
 
         this.fuel = 0;
-        return String.format("Pitch mowed by %s", janitor.name);
+        return "Pitch mowed by " + janitor.name;
     }
 }

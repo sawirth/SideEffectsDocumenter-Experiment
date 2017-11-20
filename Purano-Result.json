@@ -1,0 +1,3972 @@
+[
+  {
+    "fullName": "necmiexperiment.football.Janitor",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Janitor.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "necmiexperiment.football.Lawnmower"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "lawnmower",
+            "type": "Lnecmiexperiment/football/Lawnmower",
+            "owner": "necmiexperiment/football/Janitor",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Janitor",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Janitor.mowPitch",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "necmiexperiment.football.Club"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "fsPattern",
+            "type": "Ljava/util/regex/Pattern",
+            "owner": "java/util/Formatter",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "defaultFormatLocale",
+            "type": "Ljava/util/Locale",
+            "owner": "java/util/Locale",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "defaultLocale",
+            "type": "Ljava/util/Locale",
+            "owner": "java/util/Locale",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "defaultDisplayLocale",
+            "type": "Ljava/util/Locale",
+            "owner": "java/util/Locale",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Lawnmower",
+            "name": "mow",
+            "originOwner": "java.lang.String",
+            "originName": "format",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "necmiexperiment.football.Janitor",
+            "name": "notifyManager",
+            "originOwner": "necmiexperiment.football.Manager",
+            "originName": "takeNoteOf",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Janitor.notifyManager",
+        "purityType": "Native",
+        "methodArguments": [
+          "necmiexperiment.football.Manager",
+          "java.lang.String",
+          "necmiexperiment.football.Club"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Manager",
+            "name": "takeNoteOf",
+            "originOwner": "necmiexperiment.football.Manager",
+            "originName": "takeNoteOf",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Player",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Player.getMotivation",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "motivation",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Player.getInjured",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "injuryList",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/PhysicalCondition",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "physicalCondition",
+                "owner": "necmiexperiment.football.PlayerCondition",
+                "desc": "necmiexperiment.football.PhysicalCondition;",
+                "isThisField": false,
+                "isDynamicEffect": false
+              },
+              {
+                "name": "playerCondition",
+                "owner": "necmiexperiment.football.Player",
+                "desc": "necmiexperiment.football.PlayerCondition;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.PhysicalCondition",
+            "name": "addInjury",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.addSkill",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "necmiexperiment.football.Skill"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "skillList",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "skillList",
+                "owner": "necmiexperiment.football.Player",
+                "desc": "java.util.List;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "add",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.getPlayerSkillStrength",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": [
+              {
+                "name": "out",
+                "owner": "java.lang.System",
+                "desc": "java.io.PrintStream;",
+                "isThisField": false,
+                "isDynamicEffect": false
+              }
+            ]
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "skillList",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.io.PrintStream",
+            "name": "println",
+            "originOwner": "java.io.PrintStream",
+            "originName": "println",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "toString",
+            "originOwner": "java.lang.String",
+            "originName": "\u003cinit\u003e",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "append",
+            "originOwner": "java.lang.AbstractStringBuilder",
+            "originName": "append",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "java.lang.String",
+          "int",
+          "int",
+          "int",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "motivation",
+            "type": "int",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              4
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "playerCondition",
+            "type": "Lnecmiexperiment/football/PlayerCondition",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "powerSkill",
+            "type": "Lnecmiexperiment/football/Skill",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "speedSkill",
+            "type": "Lnecmiexperiment/football/Skill",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "mySkill",
+            "type": "Lnecmiexperiment/football/Skill",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "salary",
+            "type": "int",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              3
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "skillList",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/Player",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "addSkill",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.getPlayerCondition",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "playerCondition",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "necmiexperiment.football.PlayerCondition;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Player.getSkillEffort",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": [
+              {
+                "name": "out",
+                "owner": "java.lang.System",
+                "desc": "java.io.PrintStream;",
+                "isThisField": false,
+                "isDynamicEffect": false
+              }
+            ]
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "skillList",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "append",
+            "originOwner": "java.lang.AbstractStringBuilder",
+            "originName": "append",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.io.PrintStream",
+            "name": "println",
+            "originOwner": "java.io.PrintStream",
+            "originName": "println",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "toString",
+            "originOwner": "java.lang.String",
+            "originName": "\u003cinit\u003e",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.takePenalty",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "necmiexperiment.football.Player"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": [
+              {
+                "name": "out",
+                "owner": "java.lang.System",
+                "desc": "java.io.PrintStream;",
+                "isThisField": false,
+                "isDynamicEffect": false
+              }
+            ]
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "isBetterThan",
+            "originOwner": "necmiexperiment.football.Player",
+            "originName": "getPlayerSkillStrength",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "append",
+            "originOwner": "java.lang.AbstractStringBuilder",
+            "originName": "append",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "toString",
+            "originOwner": "java.lang.String",
+            "originName": "\u003cinit\u003e",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.io.PrintStream",
+            "name": "println",
+            "originOwner": "java.io.PrintStream",
+            "originName": "println",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.updateSkill",
+        "purityType": "Native",
+        "methodArguments": [
+          "necmiexperiment.football.Skill"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "size",
+            "originOwner": "java.util.List",
+            "originName": "size",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.getSkill",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": [
+              {
+                "name": "out",
+                "owner": "java.lang.System",
+                "desc": "java.io.PrintStream;",
+                "isThisField": false,
+                "isDynamicEffect": false
+              }
+            ]
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "powerSkill",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "necmiexperiment.football.Skill;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "mySkill",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "necmiexperiment.football.Skill;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "speedSkill",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "necmiexperiment.football.Skill;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.io.PrintStream",
+            "name": "println",
+            "originOwner": "java.io.PrintStream",
+            "originName": "println",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "append",
+            "originOwner": "java.lang.AbstractStringBuilder",
+            "originName": "append",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.StringBuilder",
+            "name": "toString",
+            "originOwner": "java.lang.String",
+            "originName": "\u003cinit\u003e",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Player.isBetterThan",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "necmiexperiment.football.Player"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "skillList",
+              "owner": "necmiexperiment.football.Player",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "getPlayerSkillStrength",
+            "originOwner": "necmiexperiment.football.Player",
+            "originName": "getPlayerSkillStrength",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.PitchType",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.PitchType.type2",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.PitchType.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.PitchType.type1",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.ProfessionalLife",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.ProfessionalLife.getAverage",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "relationsWithTrainer",
+              "owner": "necmiexperiment.football.ProfessionalLife",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "relationsWithManager",
+              "owner": "necmiexperiment.football.ProfessionalLife",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "relationsWithPresident",
+              "owner": "necmiexperiment.football.ProfessionalLife",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "relationsWithTeamMates",
+              "owner": "necmiexperiment.football.ProfessionalLife",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.ProfessionalLife.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Trainer",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Trainer.getTrainerSkill",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "trainerSkill",
+              "owner": "necmiexperiment.football.Trainer",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Trainer.trainPlayer",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "java.lang.String",
+          "necmiexperiment.football.Team",
+          "int",
+          "necmiexperiment.football.TrainingGround"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "necmiexperiment.football.TrainingSession",
+            "name": "\u003cinit\u003e",
+            "originOwner": "necmiexperiment.football.TrainingSession",
+            "originName": "\u003cinit\u003e",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Trainer.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "int",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "trainerSkill",
+            "type": "int",
+            "owner": "necmiexperiment/football/Trainer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Trainer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "motivation",
+            "type": "int",
+            "owner": "necmiexperiment/football/Trainer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Trainer.getMotivation",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "motivation",
+              "owner": "necmiexperiment.football.Trainer",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment",
+    "methodMap": []
+  },
+  {
+    "fullName": "necmiexperiment.football.PhysicalCondition",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.PhysicalCondition.addInjury",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "injuryList",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/PhysicalCondition",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "injuryList",
+                "owner": "necmiexperiment.football.PhysicalCondition",
+                "desc": "java.util.List;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "add",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.PhysicalCondition.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "injuryList",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/PhysicalCondition",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "recoveredInjuries",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/PhysicalCondition",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.PhysicalCondition.getPhysicalCondition",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "injuryList",
+              "owner": "necmiexperiment.football.PhysicalCondition",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "size",
+            "originOwner": "java.util.List",
+            "originName": "size",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.TeamConstructor",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.TeamConstructor.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.TeamConstructor.createTeamRealMadrid",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "add",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.TeamConstructor.createTeamBarcelona",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "add",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.PlayerCondition",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.PlayerCondition.getPrivateLife",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "privateLife",
+              "owner": "necmiexperiment.football.PlayerCondition",
+              "desc": "necmiexperiment.football.PrivateLife;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.PlayerCondition.getPlayerCondition",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "physicalCondition",
+              "owner": "necmiexperiment.football.PlayerCondition",
+              "desc": "necmiexperiment.football.PhysicalCondition;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "privateLife",
+              "owner": "necmiexperiment.football.PlayerCondition",
+              "desc": "necmiexperiment.football.PrivateLife;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.PhysicalCondition",
+            "name": "getPhysicalCondition",
+            "originOwner": "java.util.List",
+            "originName": "size",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.PlayerCondition.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "necmiexperiment.football.Player"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "professionalLife",
+            "type": "Lnecmiexperiment/football/ProfessionalLife",
+            "owner": "necmiexperiment/football/PlayerCondition",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "privateLife",
+            "type": "Lnecmiexperiment/football/PrivateLife",
+            "owner": "necmiexperiment/football/PlayerCondition",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "physicalCondition",
+            "type": "Lnecmiexperiment/football/PhysicalCondition",
+            "owner": "necmiexperiment/football/PlayerCondition",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Skill",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Skill.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "trainingSessions",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/Skill",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "skillStrength",
+            "type": "Lnecmiexperiment/football/SkillStrength",
+            "owner": "necmiexperiment/football/Skill",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Skill",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "learningEffort",
+            "type": "double",
+            "owner": "necmiexperiment/football/Skill",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "skillStrength",
+                "owner": "necmiexperiment.football.Skill",
+                "desc": "necmiexperiment.football.SkillStrength;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Skill.getSkillStrength",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "skillStrength",
+              "owner": "necmiexperiment.football.Skill",
+              "desc": "necmiexperiment.football.SkillStrength;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Skill.getLearningEffort",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "learningEffort",
+              "owner": "necmiexperiment.football.Skill",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Skill.updateSkill",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "skillStrength",
+            "type": "Lnecmiexperiment/football/SkillStrength",
+            "owner": "necmiexperiment/football/Skill",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "skillStrength",
+                "owner": "necmiexperiment.football.Skill",
+                "desc": "necmiexperiment.football.SkillStrength;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "size",
+            "originOwner": "java.util.List",
+            "originName": "size",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Skill.calculateLearningEffort",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "skillStrength",
+              "owner": "necmiexperiment.football.Skill",
+              "desc": "necmiexperiment.football.SkillStrength;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Clothing",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Clothing.getQuality",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "robustness",
+              "owner": "necmiexperiment.football.Clothing",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "comfort",
+              "owner": "necmiexperiment.football.Clothing",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Clothing.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "quality",
+            "type": "int",
+            "owner": "necmiexperiment/football/Clothing",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "robustness",
+                "owner": "necmiexperiment.football.Clothing",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              },
+              {
+                "name": "comfort",
+                "owner": "necmiexperiment.football.Clothing",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Clothing.setQuality",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "comfort",
+            "type": "int",
+            "owner": "necmiexperiment/football/Clothing",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [
+              {
+                "name": "comfort",
+                "owner": "necmiexperiment.football.Clothing",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "robustness",
+            "type": "int",
+            "owner": "necmiexperiment/football/Clothing",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [
+              {
+                "name": "robustness",
+                "owner": "necmiexperiment.football.Clothing",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.TrainingSession",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.TrainingSession.doCoreTraining",
+        "purityType": "StaticModifier, Native",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "trainer",
+              "owner": "necmiexperiment.football.TrainingSession",
+              "desc": "necmiexperiment.football.Trainer;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "player",
+              "owner": "necmiexperiment.football.TrainingSession",
+              "desc": "necmiexperiment.football.Player;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "trainingGround",
+              "owner": "necmiexperiment.football.TrainingSession",
+              "desc": "necmiexperiment.football.TrainingGround;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "getPlayerSkillStrength",
+            "originOwner": "necmiexperiment.football.Player",
+            "originName": "getPlayerSkillStrength",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "getSkillEffort",
+            "originOwner": "necmiexperiment.football.Player",
+            "originName": "getSkillEffort",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "necmiexperiment.football.PlayerCondition",
+            "name": "getPlayerCondition",
+            "originOwner": "java.util.List",
+            "originName": "size",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.TrainingSession.\u003cinit\u003e",
+        "purityType": "FieldModifier, StaticModifier, Native",
+        "methodArguments": [
+          "java.lang.String",
+          "necmiexperiment.football.TrainingGround",
+          "necmiexperiment.football.Trainer",
+          "necmiexperiment.football.Player"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "player",
+            "type": "Lnecmiexperiment/football/Player",
+            "owner": "necmiexperiment/football/TrainingSession",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              3
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "trainingResult",
+            "type": "double",
+            "owner": "necmiexperiment/football/TrainingSession",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "trainingGround",
+                "owner": "necmiexperiment.football.TrainingSession",
+                "desc": "necmiexperiment.football.TrainingGround;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              },
+              {
+                "name": "player",
+                "owner": "necmiexperiment.football.TrainingSession",
+                "desc": "necmiexperiment.football.Player;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              },
+              {
+                "name": "trainer",
+                "owner": "necmiexperiment.football.TrainingSession",
+                "desc": "necmiexperiment.football.Trainer;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "trainingGround",
+            "type": "Lnecmiexperiment/football/TrainingGround",
+            "owner": "necmiexperiment/football/TrainingSession",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "trainingName",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/TrainingSession",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "trainer",
+            "type": "Lnecmiexperiment/football/Trainer",
+            "owner": "necmiexperiment/football/TrainingSession",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [
+          {
+            "name": "out",
+            "type": "Ljava/io/PrintStream",
+            "owner": "java/lang/System",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.TrainingSession",
+            "name": "doCoreTraining",
+            "originOwner": "necmiexperiment.football.TrainingSession",
+            "originName": "doCoreTraining",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "necmiexperiment.football.Skill",
+            "name": "updateSkill",
+            "originOwner": "necmiexperiment.football.Skill",
+            "originName": "updateSkill",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "add",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "getSkill",
+            "originOwner": "necmiexperiment.football.Player",
+            "originName": "getSkill",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.SkillStrength",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.SkillStrength.getValue",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "value",
+              "owner": "necmiexperiment.football.SkillStrength",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.SkillStrength.getLearningEffort",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "value",
+              "owner": "necmiexperiment.football.SkillStrength",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.SkillStrength.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "double"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "value",
+            "type": "double",
+            "owner": "necmiexperiment/football/SkillStrength",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.SkillStrength.isStrongerThan",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "necmiexperiment.football.SkillStrength"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "value",
+              "owner": "necmiexperiment.football.SkillStrength",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.SkillStrength.add",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "double"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "value",
+            "type": "double",
+            "owner": "necmiexperiment/football/SkillStrength",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [
+              {
+                "name": "value",
+                "owner": "necmiexperiment.football.SkillStrength",
+                "desc": "double",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Pitch",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Pitch.getQuality",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "grass",
+              "owner": "necmiexperiment.football.Pitch",
+              "desc": "necmiexperiment.football.Grass;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Pitch.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "grass",
+            "type": "Lnecmiexperiment/football/Grass",
+            "owner": "necmiexperiment/football/Pitch",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Pitch.upgradePitch",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "int",
+          "java.nio.file.Path"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "grass",
+            "type": "Lnecmiexperiment/football/Grass",
+            "owner": "necmiexperiment/football/Pitch",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "grass",
+                "owner": "necmiexperiment.football.Pitch",
+                "desc": "necmiexperiment.football.Grass;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Grass",
+            "name": "upgradeGrassType",
+            "originOwner": "necmiexperiment.football.Grass",
+            "originName": "upgradeGrassType",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.TrainingGround",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.TrainingGround.getQuality",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "pitch",
+              "owner": "necmiexperiment.football.TrainingGround",
+              "desc": "necmiexperiment.football.Pitch;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "equipment",
+              "owner": "necmiexperiment.football.TrainingGround",
+              "desc": "necmiexperiment.football.Equipment;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.TrainingGround.upgrade",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "int",
+          "java.nio.file.Path"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "equipment",
+            "type": "Lnecmiexperiment/football/Equipment",
+            "owner": "necmiexperiment/football/TrainingGround",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "equipment",
+                "owner": "necmiexperiment.football.TrainingGround",
+                "desc": "necmiexperiment.football.Equipment;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "pitch",
+            "type": "Lnecmiexperiment/football/Pitch",
+            "owner": "necmiexperiment/football/TrainingGround",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "pitch",
+                "owner": "necmiexperiment.football.TrainingGround",
+                "desc": "necmiexperiment.football.Pitch;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Pitch",
+            "name": "upgradePitch",
+            "originOwner": "necmiexperiment.football.Grass",
+            "originName": "upgradeGrassType",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.TrainingGround.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "int",
+          "necmiexperiment.football.Equipment"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/TrainingGround",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "equipment",
+            "type": "Lnecmiexperiment/football/Equipment",
+            "owner": "necmiexperiment/football/TrainingGround",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "pitch",
+            "type": "Lnecmiexperiment/football/Pitch",
+            "owner": "necmiexperiment/football/TrainingGround",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.TrainingGround.getEquipment",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "equipment",
+              "owner": "necmiexperiment.football.TrainingGround",
+              "desc": "necmiexperiment.football.Equipment;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.TrainingGround.getPitch",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "pitch",
+              "owner": "necmiexperiment.football.TrainingGround",
+              "desc": "necmiexperiment.football.Pitch;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Shoe",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Shoe.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Shoe.getQuality",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "comfort",
+              "owner": "necmiexperiment.football.Shoe",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "robustness",
+              "owner": "necmiexperiment.football.Shoe",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Shoe.setQuality",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "comfort",
+            "type": "int",
+            "owner": "necmiexperiment/football/Shoe",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [
+              {
+                "name": "comfort",
+                "owner": "necmiexperiment.football.Shoe",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "robustness",
+            "type": "int",
+            "owner": "necmiexperiment/football/Shoe",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [
+              {
+                "name": "robustness",
+                "owner": "necmiexperiment.football.Shoe",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Manager",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Manager.takeNoteOf",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.lang.String",
+          "necmiexperiment.football.Club"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.io.BufferedWriter",
+            "name": "close",
+            "originOwner": "java.io.BufferedWriter",
+            "originName": "close",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.Throwable",
+            "name": "addSuppressed",
+            "originOwner": "java.lang.Throwable",
+            "originName": "addSuppressed",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.io.Writer",
+            "name": "write",
+            "originOwner": "java.io.Writer",
+            "originName": "write",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Manager.getTrainer",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "trainer",
+              "owner": "necmiexperiment.football.Manager",
+              "desc": "necmiexperiment.football.Trainer;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Manager.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "int",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "motivation",
+            "type": "int",
+            "owner": "necmiexperiment/football/Manager",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "trainer",
+            "type": "Lnecmiexperiment/football/Trainer",
+            "owner": "necmiexperiment/football/Manager",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Manager",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "salary",
+            "type": "int",
+            "owner": "necmiexperiment/football/Manager",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.President",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.President.raiseManagerSalary",
+        "purityType": "ArgumentModifier",
+        "methodArguments": [
+          "necmiexperiment.football.Club",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 0,
+            "hasDirectAccess": true,
+            "isDynamicEffect": false,
+            "owner": "",
+            "name": "",
+            "originOwner": "",
+            "originName": ""
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.President.upgradeTrainingGround",
+        "purityType": "Native",
+        "methodArguments": [
+          "necmiexperiment.football.Club",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.TrainingGround",
+            "name": "upgrade",
+            "originOwner": "necmiexperiment.football.Grass",
+            "originName": "upgradeGrassType",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.President.raisePlayerSalary",
+        "purityType": "Native",
+        "methodArguments": [
+          "int",
+          "necmiexperiment.football.Club",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.President.decreasePlayerSalary",
+        "purityType": "Native",
+        "methodArguments": [
+          "int",
+          "necmiexperiment.football.Club",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.President.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/President",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Grass",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Grass.upgradeGrassType",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "int",
+          "java.nio.file.Path"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "grassType",
+            "type": "int",
+            "owner": "necmiexperiment/football/Grass",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.lang.Throwable",
+            "name": "addSuppressed",
+            "originOwner": "java.lang.Throwable",
+            "originName": "addSuppressed",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.List",
+            "name": "get",
+            "originOwner": "java.util.List",
+            "originName": "get",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.Integer",
+            "name": "parseInt",
+            "originOwner": "java.lang.Integer",
+            "originName": "parseInt",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Grass.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "int",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "grassLength",
+            "type": "int",
+            "owner": "necmiexperiment/football/Grass",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "grassType",
+            "type": "int",
+            "owner": "necmiexperiment/football/Grass",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Grass.getQuality",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "grassType",
+              "owner": "necmiexperiment.football.Grass",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "grassLength",
+              "owner": "necmiexperiment.football.Grass",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Club",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Club.getTeam",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "team",
+              "owner": "necmiexperiment.football.Club",
+              "desc": "necmiexperiment.football.Team;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Club.notes",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Club.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "java.lang.String",
+          "necmiexperiment.football.President",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "president",
+            "type": "Lnecmiexperiment/football/President",
+            "owner": "necmiexperiment/football/Club",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Club",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "janitor",
+            "type": "Lnecmiexperiment/football/Janitor",
+            "owner": "necmiexperiment/football/Club",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "equipment",
+            "type": "Lnecmiexperiment/football/Equipment",
+            "owner": "necmiexperiment/football/Club",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "trainingGround",
+            "type": "Lnecmiexperiment/football/TrainingGround",
+            "owner": "necmiexperiment/football/Club",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "team",
+            "type": "Lnecmiexperiment/football/Team",
+            "owner": "necmiexperiment/football/Club",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.TeamConstructor",
+            "name": "createTeamBarcelona",
+            "originOwner": "necmiexperiment.football.TeamConstructor",
+            "originName": "createTeamBarcelona",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "necmiexperiment.football.TeamConstructor",
+            "name": "createTeamRealMadrid",
+            "originOwner": "necmiexperiment.football.TeamConstructor",
+            "originName": "createTeamRealMadrid",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Club.getJanitor",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "janitor",
+              "owner": "necmiexperiment.football.Club",
+              "desc": "necmiexperiment.football.Janitor;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Club.getPresident",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "president",
+              "owner": "necmiexperiment.football.Club",
+              "desc": "necmiexperiment.football.President;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Club.getTrainingGround",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "trainingGround",
+              "owner": "necmiexperiment.football.Club",
+              "desc": "necmiexperiment.football.TrainingGround;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.PrivateLife",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.PrivateLife.talkToPress",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "press",
+            "type": "int",
+            "owner": "necmiexperiment/football/PrivateLife",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "press",
+                "owner": "necmiexperiment.football.PrivateLife",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.PrivateLife.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "necmiexperiment.football.Player"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "player",
+            "type": "Lnecmiexperiment/football/Player",
+            "owner": "necmiexperiment/football/PrivateLife",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.PrivateLife.visitFamily",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "family",
+            "type": "int",
+            "owner": "necmiexperiment/football/PrivateLife",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "family",
+                "owner": "necmiexperiment.football.PrivateLife",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.PrivateLife.goPartying",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "player",
+            "type": "Lnecmiexperiment/football/Player",
+            "owner": "necmiexperiment/football/PrivateLife",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "player",
+                "owner": "necmiexperiment.football.PrivateLife",
+                "desc": "necmiexperiment.football.Player;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "nightLife",
+            "type": "int",
+            "owner": "necmiexperiment/football/PrivateLife",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "nightLife",
+                "owner": "necmiexperiment.football.PrivateLife",
+                "desc": "int",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "necmiexperiment.football.Player",
+            "name": "getInjured",
+            "originOwner": "java.util.List",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.PrivateLife.getPrivateLifeEffect",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "nightLife",
+              "owner": "necmiexperiment.football.PrivateLife",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Team",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Team.getManager",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "manager",
+              "owner": "necmiexperiment.football.Team",
+              "desc": "necmiexperiment.football.Manager;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Team.getPlayerList",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "playerList",
+              "owner": "necmiexperiment.football.Team",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Team.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "java.util.List",
+          "necmiexperiment.football.Manager"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "manager",
+            "type": "Lnecmiexperiment/football/Manager",
+            "owner": "necmiexperiment/football/Team",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "playerList",
+            "type": "Ljava/util/List",
+            "owner": "necmiexperiment/football/Team",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Team",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Equipment",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Equipment.getQuality",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "quality",
+              "owner": "necmiexperiment.football.Equipment",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Equipment.getClothing",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "clothing",
+              "owner": "necmiexperiment.football.Equipment",
+              "desc": "necmiexperiment.football.Clothing;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Equipment.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "clothing",
+            "type": "Lnecmiexperiment/football/Clothing",
+            "owner": "necmiexperiment/football/Equipment",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "quality",
+            "type": "int",
+            "owner": "necmiexperiment/football/Equipment",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "shoe",
+                "owner": "necmiexperiment.football.Equipment",
+                "desc": "necmiexperiment.football.Shoe;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              },
+              {
+                "name": "clothing",
+                "owner": "necmiexperiment.football.Equipment",
+                "desc": "necmiexperiment.football.Clothing;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "shoe",
+            "type": "Lnecmiexperiment/football/Shoe",
+            "owner": "necmiexperiment/football/Equipment",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "necmiexperiment/football/Equipment",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Equipment.getShoe",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "shoe",
+              "owner": "necmiexperiment.football.Equipment",
+              "desc": "necmiexperiment.football.Shoe;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Equipment.upgradeEquipment",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "clothing",
+            "type": "Lnecmiexperiment/football/Clothing",
+            "owner": "necmiexperiment/football/Equipment",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "clothing",
+                "owner": "necmiexperiment.football.Equipment",
+                "desc": "necmiexperiment.football.Clothing;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "shoe",
+            "type": "Lnecmiexperiment/football/Shoe",
+            "owner": "necmiexperiment/football/Equipment",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "shoe",
+                "owner": "necmiexperiment.football.Equipment",
+                "desc": "necmiexperiment.football.Shoe;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "necmiexperiment.football.Lawnmower",
+    "methodMap": [
+      {
+        "name": "necmiexperiment.football.Lawnmower.mow",
+        "purityType": "ArgumentModifier, StaticModifier, Native",
+        "methodArguments": [
+          "necmiexperiment.football.Janitor",
+          "necmiexperiment.football.Pitch"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [
+          {
+            "name": "b5p",
+            "type": "[Lsun/misc/FDBigInt",
+            "owner": "sun/misc/FloatingDecimal",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "fsPattern",
+            "type": "Ljava/util/regex/Pattern",
+            "owner": "java/util/Formatter",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "defaultFormatLocale",
+            "type": "Ljava/util/Locale",
+            "owner": "java/util/Locale",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "EMPTY_THROWABLE_ARRAY",
+            "type": "[Ljava/lang/Throwable",
+            "owner": "java/lang/Throwable",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "defaultLocale",
+            "type": "Ljava/util/Locale",
+            "owner": "java/util/Locale",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccess",
+            "type": "[Ljava/lang/String",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "packageAccessValid",
+            "type": "boolean",
+            "owner": "java/lang/SecurityManager",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "defaultDisplayLocale",
+            "type": "Ljava/util/Locale",
+            "owner": "java/util/Locale",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 1,
+            "hasDirectAccess": true,
+            "isDynamicEffect": false,
+            "owner": "",
+            "name": "",
+            "originOwner": "",
+            "originName": ""
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "fuel",
+              "owner": "necmiexperiment.football.Lawnmower",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.lang.String",
+            "name": "format",
+            "originOwner": "java.lang.String",
+            "originName": "format",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "necmiexperiment.football.Lawnmower.refuel",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "necmiexperiment.football.Lawnmower.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  }
+]

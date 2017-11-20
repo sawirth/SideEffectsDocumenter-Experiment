@@ -1,13 +1,9 @@
 package necmiexperiment.football;
 
-import java.io.BufferedWriter;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Grass {
 
@@ -27,9 +23,10 @@ public class Grass {
     }
 
     public void upgradeGrassType(int type, Path notes) {
-        try (Stream<String> stream = Files.lines(notes)) {
-            List<String> elements = stream.collect(Collectors.toList());
-            int oldType = Integer.parseInt(elements.get(0));
+        try {
+            FileReader fileReader = new FileReader(notes.toString());
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            int oldType = Integer.parseInt(bufferedReader.readLine());
             if (oldType != type) {
                 this.grassType = type;
             }

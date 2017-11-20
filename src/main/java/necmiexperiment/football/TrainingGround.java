@@ -4,7 +4,7 @@ import java.nio.file.Path;
 
 public class TrainingGround {
     private String name;
-    private Pitch pitch;
+    public Pitch pitch;
     private Equipment equipment;
     private int pitchQuality;
     private int equipmentQuality;

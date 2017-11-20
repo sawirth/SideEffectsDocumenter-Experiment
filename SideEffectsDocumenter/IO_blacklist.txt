@@ -4,6 +4,7 @@
 
 # Packages
 java.io
+java.nio
 org.apache.commons.io
 java.sql
 

@@ -11,7 +11,7 @@ public class Janitor {
 
     public void mowPitch(Club club) {
         this.lawnmower.refuel();
-        String mowResult = this.lawnmower.mow(this, club.trainingGround.getPitch());
+        String mowResult = this.lawnmower.mow(this, club.trainingGround.pitch);
         notifyManager(club.team.manager, mowResult, club);
     }
 
