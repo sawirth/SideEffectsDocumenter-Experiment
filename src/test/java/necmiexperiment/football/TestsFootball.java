@@ -1,24 +1,23 @@
 package necmiexperiment.football;
 
 import junit.framework.TestCase;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TestsFootball { //extends TestCase{
+public class TestsFootball extends TestCase {
     public void test01() {
-        		/* For Logging; do not make any changes in the following three lines */
+        /* For Logging; do not make any changes in the following three lines */
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
         System.out.println("Program compiled at " + dateFormat.format(date));
 
 		/*CODE FOR THE EXPERIMENT*/
 
-
 		/*Create football Clubs*/
         Club barcelona = new Club("Barcelona", new President("Josep Maria Bartomeu"), "Nike", "Steve");
         Club realMadrid = new Club("Real Madrid", new President("Real Madrid President"), "Adidas", "Michael");
-
 
 		/*Some player goes partying*/
         barcelona.getTeam().getPlayerList().get(0).getPlayerCondition().getPrivateLife().goPartying();
@@ -39,7 +38,7 @@ public class TestsFootball { //extends TestCase{
         realMadrid.getPresident().raisePlayerSalary(3,barcelona,1000);
 
         /* Janitor mows grass */
-        barcelona.getJanitor().mowPitch(barcelona.getTrainingGround().getPitch());
+        barcelona.getJanitor().mowPitch(barcelona);
 
 		/*Player 5 (real madrid) is sent to speed training*/
         realMadrid.getTeam().getManager().getTrainer().trainPlayer("speed"	,barcelona.team,	0,	barcelona.trainingGround	);

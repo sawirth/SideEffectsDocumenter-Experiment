@@ -1,5 +1,7 @@
 package necmiexperiment.football;
 
+import java.nio.file.Path;
+
 public class TrainingGround {
     private String name;
     private Pitch pitch;
@@ -13,15 +15,15 @@ public class TrainingGround {
         this.pitch = new Pitch();
     }
 
-    public void upgrade(int upgradeType) {
+    public void upgrade(int upgradeType, Path notes) {
         switch(upgradeType) {
             case 1:
                 getEquipment().upgradeEquipment(10);
-                getPitch().upgradePitch(PitchType.type1());
+                getPitch().upgradePitch(PitchType.type1(), notes);
                 break;
             case 2:
                 getEquipment().upgradeEquipment(10);
-                getPitch().upgradePitch(PitchType.type2());
+                getPitch().upgradePitch(PitchType.type2(), notes);
                 break;
         }
     }

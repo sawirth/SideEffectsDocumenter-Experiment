@@ -1,25 +1,21 @@
 package necmiexperiment.football;
-
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 public class Janitor {
 
-    private String name;
+    public String name;
+    private Lawnmower lawnmower;
 
-    public Janitor(String name) {
+    public Janitor(String name, Lawnmower lawnmower) {
         this.name = name;
+        this.lawnmower = lawnmower;
     }
 
-    public void mowPitch(Pitch pitch) {
-        Path path = Paths.get("resources/task1.txt");
-        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
-            writer.write("pitch mowed by " + this.name);
-        } catch (IOException ex) {
-        //do nothing
-        }
+    public void mowPitch(Club club) {
+        this.lawnmower.refuel();
+        String mowResult = this.lawnmower.mow(this, club.trainingGround.getPitch());
+        notifyManager(club.team.manager, mowResult, club);
+    }
+
+    private void notifyManager(Manager manager, String message, Club club) {
+        manager.takeNoteOf(message, club);
     }
 }

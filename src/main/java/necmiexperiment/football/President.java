@@ -30,9 +30,9 @@ public class President {
 
     public void upgradeTrainingGround(Club club, int upgradeType) {
         if (upgradeType == 1) {
-            club.getTrainingGround().upgrade(upgradeType);
+            club.getTrainingGround().upgrade(upgradeType, club.notes());
         } else {
-            club.getTrainingGround().upgrade(upgradeType);
+            club.getTrainingGround().upgrade(upgradeType, club.notes());
         }
     }
 }

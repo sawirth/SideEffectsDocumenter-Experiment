@@ -26,13 +26,15 @@ public class Grass {
         return this.grassType + this.grassLength;
     }
 
-    public void upgradeGrassType(int type) {
-        try (Stream<String> stream = Files.lines(Paths.get("resources/task1.txt"))) {
+    public void upgradeGrassType(int type, Path notes) {
+        try (Stream<String> stream = Files.lines(notes)) {
             List<String> elements = stream.collect(Collectors.toList());
-            type = Integer.parseInt(elements.get(0));
+            int oldType = Integer.parseInt(elements.get(0));
+            if (oldType != type) {
+                this.grassType = type;
+            }
         } catch (IOException ex) {
-        //do nothing
+            //do nothing
         }
-        this.grassType = type;
     }
 }

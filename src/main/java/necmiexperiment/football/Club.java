@@ -1,5 +1,8 @@
 package necmiexperiment.football;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class Club {
     private String name;
     public Team team;
@@ -22,10 +25,10 @@ public class Club {
             this.team = team = new TeamConstructor().createTeamRealMadrid();
             this.equipment = new Equipment(equipmentName);
             this.president = president;
-            this.trainingGround = new TrainingGround("Zidaner", 90, this.equipment);
+            this.trainingGround = new TrainingGround("Zidane", 90, this.equipment);
         }
 
-        this.janitor = new Janitor(janitor);
+        this.janitor = new Janitor(janitor, new Lawnmower());
     }
 
     public Team getTeam() {
@@ -42,5 +45,9 @@ public class Club {
 
     public Janitor getJanitor() {
         return janitor;
+    }
+
+    public Path notes() {
+        return Paths.get("resources/task1.txt");
     }
 }

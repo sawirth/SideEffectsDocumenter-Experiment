@@ -1,7 +1,9 @@
 package necmiexperiment.football;
 
+import java.nio.file.Path;
+
 public class Pitch {
-    private Grass grass;
+    public Grass grass;
     private int pitchQuality;
 
     public Pitch() {
@@ -12,7 +14,7 @@ public class Pitch {
         return this.grass.getQuality();
     }
 
-    public void upgradePitch(int type) {
-        this.grass.upgradeGrassType(type);
+    public void upgradePitch(int type, Path notes) {
+        this.grass.upgradeGrassType(type, notes);
     }
 }
