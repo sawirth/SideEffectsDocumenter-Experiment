@@ -3,9 +3,13 @@ package necmiexperiment.football;
 public class TrainingSession {
 
     public double trainingResult;
+
     private String trainingName;
+
     private TrainingGround trainingGround;
+
     private Trainer trainer;
+
     private Player player;
 
     public TrainingSession(String trainingName, TrainingGround trainingGround, Trainer trainer, Player player) {

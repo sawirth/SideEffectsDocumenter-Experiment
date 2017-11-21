@@ -18,7 +18,7 @@ public class PrivateLife {
     }
 
     public int getPrivateLifeEffect() {
-        int effect = this.nightLife;
+        int effect = this.family + this.press - this.nightLife;
         return effect;
     }
 

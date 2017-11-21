@@ -5,6 +5,7 @@ import java.util.List;
 public class President {
 
     public static int budget;
+
     private String name;
 
     public President(String name) {

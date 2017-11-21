@@ -6,9 +6,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/*
-    Static Modifier
- */
+//Static Modifier
 public class Task3 {
 
     //@Test

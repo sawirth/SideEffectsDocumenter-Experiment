@@ -5,7 +5,9 @@ import java.nio.file.Path;
 public class TrainingGround {
 
     public Pitch pitch;
+
     private String name;
+
     private Equipment equipment;
 
     private int pitchQuality;

@@ -6,8 +6,11 @@ import java.util.List;
 public class Skill {
 
     public List<TrainingSession> trainingSessions;
+
     private String name;
+
     private SkillStrength skillStrength;
+
     private double learningEffort;
 
     public Skill(String name, int skillStrength) {

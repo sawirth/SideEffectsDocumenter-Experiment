@@ -1,5 +1,9 @@
 package necmiexperiment.football;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Trainer {
 
     private String name;
@@ -33,5 +37,21 @@ public class Trainer {
         if (skillName.equals("shoot")) {
             TrainingSession traingSession = new TrainingSession("shoot", trainingGround, this, player);
         }
+    }
+
+    public Player findBestPlayer(List<Player> playerList) {
+        List<Player> bestPlayers = new ArrayList<>();
+        bestPlayers.add(Physiotherapist.findFittestPlayer(playerList));
+        bestPlayers.add(MentalCoach.findMostMotivatedPlayer(playerList));
+        Collections.shuffle(bestPlayers);
+        return bestPlayers.get(0);
+    }
+
+    public Player findWorstPlayer(List<Player> playerList) {
+        List<Player> worstPlayers = new ArrayList<>();
+        worstPlayers.add(Physiotherapist.findLeastFittestPlayer(playerList));
+        worstPlayers.add(MentalCoach.findLeastMotivatedPlayer(playerList));
+        Collections.shuffle(worstPlayers);
+        return worstPlayers.get(0);
     }
 }

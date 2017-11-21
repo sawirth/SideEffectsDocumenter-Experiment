@@ -3,8 +3,11 @@ package necmiexperiment.football;
 public class PlayerCondition {
 
     public PhysicalCondition physicalCondition;
+
     private PrivateLife privateLife;
+
     private ProfessionalLife professionalLife;
+
     private Player player;
 
     public PlayerCondition(Player player) {
@@ -20,5 +23,9 @@ public class PlayerCondition {
     public int getPlayerCondition() {
         int temp = this.privateLife.getPrivateLifeEffect() + this.physicalCondition.getPhysicalCondition();
         return temp;
+    }
+
+    public double calculateFitness() {
+        return privateLife.getPrivateLifeEffect() + professionalLife.getAverage();
     }
 }

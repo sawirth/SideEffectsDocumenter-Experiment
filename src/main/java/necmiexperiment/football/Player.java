@@ -6,13 +6,21 @@ import java.util.List;
 public class Player {
 
     public int salary;
+
     public int motivation;
+
     public PlayerCondition playerCondition;
+
     private String name;
+
     private List<Skill> skillList;
+
     private Skill powerSkill;
+
     private Skill speedSkill;
+
     private Skill mySkill;
+
     private int daysInClub;
 
     public Player(String name, int speed, int power, int salary, int motivation) {
@@ -112,5 +120,9 @@ public class Player {
     public boolean wantsToMove(Manager manager) {
         int physicalCondition = this.getPlayerCondition().getPlayerCondition();
         return manager.motivation + physicalCondition - daysInClub < 10;
+    }
+
+    public boolean isInjured() {
+        return this.playerCondition.physicalCondition.isInjured();
     }
 }

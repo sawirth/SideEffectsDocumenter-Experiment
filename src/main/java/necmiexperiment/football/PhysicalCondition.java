@@ -27,4 +27,8 @@ public class PhysicalCondition {
         }
         return 2;
     }
+
+    public boolean isInjured() {
+        return this.injuryList.size() != this.recoveredInjuries.size();
+    }
 }

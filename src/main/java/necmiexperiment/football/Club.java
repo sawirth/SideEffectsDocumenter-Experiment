@@ -6,12 +6,17 @@ import java.nio.file.Paths;
 public class Club {
 
     public static int salaryMultiplicator = 1;
+
     public Team team;
 
     public TrainingGround trainingGround;
+
     private String name;
+
     private President president;
+
     private Equipment equipment;
+
     private Janitor janitor;
 
     public Club(String name, President president, String equipmentName, String janitor) {
