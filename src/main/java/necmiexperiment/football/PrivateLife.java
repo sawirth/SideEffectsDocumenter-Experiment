@@ -1,9 +1,13 @@
 package necmiexperiment.football;
 
 public class PrivateLife {
+
     private int nightLife;
+
     private int family;
+
     private int press;
+
     private Player player;
 
     public PrivateLife(Player player) {

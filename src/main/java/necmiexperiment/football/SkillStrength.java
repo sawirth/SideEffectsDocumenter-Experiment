@@ -1,6 +1,7 @@
 package necmiexperiment.football;
 
 public class SkillStrength {
+
     private double value;
 
     public SkillStrength(double value) {

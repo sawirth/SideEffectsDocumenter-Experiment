@@ -1,6 +1,7 @@
 package necmiexperiment.football;
 
 public class Lawnmower {
+
     private int fuel;
 
     public void refuel() {
@@ -13,7 +14,6 @@ public class Lawnmower {
         } else {
             pitch.grass.grassLength -= 10;
         }
-
         this.fuel = 0;
         return "Pitch mowed by " + janitor.name;
     }

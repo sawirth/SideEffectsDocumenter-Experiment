@@ -3,10 +3,13 @@ package necmiexperiment.football;
 import java.nio.file.Path;
 
 public class TrainingGround {
-    private String name;
+
     public Pitch pitch;
+    private String name;
     private Equipment equipment;
+
     private int pitchQuality;
+
     private int equipmentQuality;
 
     public TrainingGround(String name, int pitchQuality, Equipment equipment) {
@@ -16,7 +19,7 @@ public class TrainingGround {
     }
 
     public void upgrade(int upgradeType, Path notes) {
-        switch(upgradeType) {
+        switch (upgradeType) {
             case 1:
                 getEquipment().upgradeEquipment(10);
                 getPitch().upgradePitch(PitchType.type1(), notes);

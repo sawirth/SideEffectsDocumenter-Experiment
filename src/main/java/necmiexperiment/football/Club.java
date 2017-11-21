@@ -4,14 +4,16 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Club {
-    private String name;
+
+    public static int salaryMultiplicator = 1;
     public Team team;
+
     public TrainingGround trainingGround;
+    private String name;
     private President president;
     private Equipment equipment;
     private Janitor janitor;
 
-    public static int salaryMultiplicator = 1;
     public Club(String name, President president, String equipmentName, String janitor) {
         if (name.equals("Barcelona")) {
             this.name = name;
@@ -20,7 +22,6 @@ public class Club {
             this.president = president;
             this.trainingGround = new TrainingGround("Ciutat Esportiva Joan Gamper", 90, this.equipment);
         }
-
         if (name.equals("Real Madrid")) {
             this.name = name;
             this.team = team = new TeamConstructor().createTeamRealMadrid();
@@ -28,7 +29,6 @@ public class Club {
             this.president = president;
             this.trainingGround = new TrainingGround("Zidane", 90, this.equipment);
         }
-
         this.janitor = new Janitor(janitor, new Lawnmower());
     }
 
@@ -63,11 +63,9 @@ public class Club {
                 } else {
                     wins--;
                 }
-
                 counter++;
             }
         }
-
         if (wins > 0) {
             this.team.manager.makeParty();
         } else {

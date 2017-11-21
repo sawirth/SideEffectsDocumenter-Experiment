@@ -1,9 +1,10 @@
 package necmiexperiment.football;
 
 public class PlayerCondition {
+
+    public PhysicalCondition physicalCondition;
     private PrivateLife privateLife;
     private ProfessionalLife professionalLife;
-    public PhysicalCondition physicalCondition;
     private Player player;
 
     public PlayerCondition(Player player) {

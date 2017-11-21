@@ -3,7 +3,9 @@ package necmiexperiment.football;
 import java.nio.file.Path;
 
 public class Pitch {
+
     public Grass grass;
+
     private int pitchQuality;
 
     public Pitch() {

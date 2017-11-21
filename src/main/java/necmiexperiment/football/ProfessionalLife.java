@@ -1,9 +1,13 @@
 package necmiexperiment.football;
 
 public class ProfessionalLife {
+
     private int relationsWithTeamMates;
+
     private int relationsWithManager;
+
     private int relationsWithPresident;
+
     private int relationsWithTrainer;
 
     public ProfessionalLife() {

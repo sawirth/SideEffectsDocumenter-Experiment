@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeamConstructor {
+
     public Team createTeamBarcelona() {
         /*create manager*/
         Manager manager = new Manager("Someone", 5000000, 7);

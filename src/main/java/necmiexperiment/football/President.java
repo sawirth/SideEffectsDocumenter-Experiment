@@ -1,9 +1,11 @@
 package necmiexperiment.football;
 
 import java.util.List;
+
 public class President {
-    private String name;
+
     public static int budget;
+    private String name;
 
     public President(String name) {
         this.name = name;
@@ -44,7 +46,6 @@ public class President {
         for (Player player : playerList) {
             sum += player.salary;
         }
-
         if (sum > budget) {
             throw new SalaryEscalationException();
         }

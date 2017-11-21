@@ -1,12 +1,13 @@
 package necmiexperiment.football;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
 public class PhysicalCondition {
+
     private List<String> injuryList;
+
     private List<String> recoveredInjuries;
 
     public PhysicalCondition() {
@@ -21,10 +22,9 @@ public class PhysicalCondition {
     public int getPhysicalCondition() {
         if (injuryList.size() > 0) {
             return 0;
-        } else if (Calendar.getInstance().getTime().getDay() <= 15){
+        } else if (Calendar.getInstance().getTime().getDay() <= 15) {
             return 1;
         }
-
         return 2;
     }
 }

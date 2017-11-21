@@ -1,7 +1,9 @@
 package necmiexperiment.football;
+
 public class Janitor {
 
     public String name;
+
     private Lawnmower lawnmower;
 
     public Janitor(String name, Lawnmower lawnmower) {

@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Skill {
+
+    public List<TrainingSession> trainingSessions;
     private String name;
     private SkillStrength skillStrength;
     private double learningEffort;
-    public List<TrainingSession> trainingSessions;
 
     public Skill(String name, int skillStrength) {
         this.name = name;

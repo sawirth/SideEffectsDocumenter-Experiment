@@ -5,10 +5,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 public class Manager {
-    private String name;
-    private Trainer trainer;
+
     public int salary;
     public int motivation;
+    private String name;
+    private Trainer trainer;
 
     public Manager(String name, int salary, int motivation) {
         this.name = name;
@@ -32,7 +33,6 @@ public class Manager {
     public void sellPlayer(Team team) {
         for (Player player : team.playerList) {
             if (player.wantsToMove(this)) {
-
             }
         }
     }

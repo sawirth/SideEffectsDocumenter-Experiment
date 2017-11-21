@@ -1,24 +1,23 @@
 package necmiexperiment.football;
 
 public class TrainingSession {
+
+    public double trainingResult;
     private String trainingName;
     private TrainingGround trainingGround;
     private Trainer trainer;
     private Player player;
-    public double trainingResult;
 
     public TrainingSession(String trainingName, TrainingGround trainingGround, Trainer trainer, Player player) {
         this.trainingName = trainingName;
         this.trainingGround = trainingGround;
         this.trainer = trainer;
         this.player = player;
-
         if (trainingName.equals("speed")) {
             this.trainingResult = doCoreTraining("speed");
             this.player.getSkill("speed").trainingSessions.add(this);
             this.player.getSkill("speed").updateSkill();
         }
-
         if (trainingName.equals("power")) {
             this.trainingResult = doCoreTraining("power");
             this.player.getSkill("power").trainingSessions.add(this);

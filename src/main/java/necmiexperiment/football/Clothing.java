@@ -1,8 +1,11 @@
 package necmiexperiment.football;
 
 public class Clothing {
+
     private int comfort;
+
     private int robustness;
+
     private int quality;
 
     public Clothing() {

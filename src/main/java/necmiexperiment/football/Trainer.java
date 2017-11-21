@@ -1,8 +1,11 @@
 package necmiexperiment.football;
 
 public class Trainer {
+
     private String name;
+
     private int trainerSkill;
+
     private int motivation;
 
     public Trainer(String name, int trainerSkill, int motivation) {
@@ -24,11 +27,9 @@ public class Trainer {
         if (skillName.equals("speed")) {
             TrainingSession traingSession = new TrainingSession("speed", trainingGround, this, player);
         }
-
         if (skillName.equals("power")) {
             TrainingSession traingSession = new TrainingSession("power", trainingGround, this, player);
         }
-
         if (skillName.equals("shoot")) {
             TrainingSession traingSession = new TrainingSession("shoot", trainingGround, this, player);
         }
