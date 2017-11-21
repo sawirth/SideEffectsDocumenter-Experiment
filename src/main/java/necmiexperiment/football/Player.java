@@ -1,5 +1,6 @@
 package necmiexperiment.football;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +10,7 @@ public class Player {
     private Skill powerSkill;
     private Skill speedSkill;
     private Skill mySkill;
+    private int daysInClub;
     public int salary;
     public int motivation;
     public PlayerCondition playerCondition;
@@ -19,6 +21,7 @@ public class Player {
         this.speedSkill = new Skill("speed", speed);
         this.powerSkill = new Skill("power", power);
         this.mySkill = new Skill("shoot", speed + power);
+        this.daysInClub = 365;
         addSkill(speedSkill);
         addSkill(powerSkill);
         addSkill(mySkill);
@@ -95,7 +98,6 @@ public class Player {
             return this.skillList.get(2).getSkillStrength();
         }
 
-        System.out.println("Skill " + skillName + " does not exists");
         return null;
     }
 
@@ -107,15 +109,20 @@ public class Player {
         return false;
     }
 
-    public void takePenalty(Player goalKeeper) {
+    public boolean takePenalty(Player goalKeeper) {
         if (this.isBetterThan(goalKeeper)) {
-            System.out.println(this.name + " scored");
+            return true;
         } else {
-            System.out.println(goalKeeper.name + " saves");
+            return false;
         }
     }
 
     public void getInjured(String injury) {
         this.playerCondition.physicalCondition.addInjury(injury);
+    }
+
+    public boolean wantsToMove(Manager manager) {
+        int physicalCondition = this.getPlayerCondition().getPlayerCondition();
+        return manager.motivation +  physicalCondition - daysInClub < 10;
     }
 }

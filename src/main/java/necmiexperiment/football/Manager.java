@@ -3,8 +3,6 @@ package necmiexperiment.football;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class Manager {
     private String name;
@@ -29,5 +27,17 @@ public class Manager {
         } catch (IOException ex) {
             //do nothing
         }
+    }
+
+    public void sellPlayer(Team team) {
+        for (Player player : team.playerList) {
+            if (player.wantsToMove(this)) {
+
+            }
+        }
+    }
+
+    public void makeParty() {
+        President.budget = 1000;
     }
 }

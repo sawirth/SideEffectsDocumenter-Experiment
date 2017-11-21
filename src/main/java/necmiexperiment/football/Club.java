@@ -11,6 +11,7 @@ public class Club {
     private Equipment equipment;
     private Janitor janitor;
 
+    public static int salaryMultiplicator = 1;
     public Club(String name, President president, String equipmentName, String janitor) {
         if (name.equals("Barcelona")) {
             this.name = name;
@@ -49,5 +50,28 @@ public class Club {
 
     public Path notes() {
         return Paths.get("resources/task1.txt");
+    }
+
+    public void playGameAgainst(Club club) {
+        int wins = 0;
+        for (Player player : this.team.playerList) {
+            int counter = 0;
+            for (Player playerOtherTeam : club.team.playerList) {
+                boolean weWon;
+                if (counter % 2 == 0 && (player.takePenalty(playerOtherTeam)) || !playerOtherTeam.takePenalty(player)) {
+                    wins++;
+                } else {
+                    wins--;
+                }
+
+                counter++;
+            }
+        }
+
+        if (wins > 0) {
+            this.team.manager.makeParty();
+        } else {
+            club.team.manager.makeParty();
+        }
     }
 }

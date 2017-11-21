@@ -1,12 +1,12 @@
 package necmiexperiment.football;
 
-import junit.framework.TestCase;
-
+import org.junit.Test;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TestsFootball extends TestCase {
+public class TestsFootball {
+    //@Test
     public void test01() {
         /* For Logging; do not make any changes in the following three lines */
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

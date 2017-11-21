@@ -1,10 +1,13 @@
 package necmiexperiment.football;
 
+import java.util.List;
 public class President {
     private String name;
+    public static int budget;
 
     public President(String name) {
         this.name = name;
+        budget = 20000000;
     }
 
     public void raisePlayerSalary(int playerIndex, Club club, int amount) {
@@ -33,6 +36,17 @@ public class President {
             club.getTrainingGround().upgrade(upgradeType, club.notes());
         } else {
             club.getTrainingGround().upgrade(upgradeType, club.notes());
+        }
+    }
+
+    public void controlSalaries(List<Player> playerList) {
+        int sum = 0;
+        for (Player player : playerList) {
+            sum += player.salary;
+        }
+
+        if (sum > budget) {
+            throw new SalaryEscalationException();
         }
     }
 }
