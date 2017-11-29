@@ -11,8 +11,16 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile files('./resources/io-test-1.0-SNAPSHOT.jar')
 }
 
 test {
-//    exclude 'necmiexperiment/**'
+    exclude 'necmiexperiment/**'
+}
+
+task task1 (type: Test) {
+    group = "experiment"
+    include '**/Test1*'
+    include '**/Ctrl1**'
+    outputs.upToDateWhen {false}
 }

@@ -9,7 +9,7 @@ import java.util.Date;
 //Static Modifier
 public class Task3 {
 
-    //@Test
+    @Test
     public void task3() {
                 /* For Logging; do not make any changes in the following three lines */
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

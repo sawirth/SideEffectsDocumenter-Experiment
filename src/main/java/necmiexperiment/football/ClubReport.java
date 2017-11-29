@@ -20,15 +20,7 @@ public class ClubReport {
 
     public final int generalMood;
 
-    public ClubReport(int totalSalaries,
-                      int lowestSalary,
-                      int highestSalary,
-                      Player bestPlayer,
-                      Player worstPlayer,
-                      int numberOfPlayers,
-                      int pitchQuality,
-                      int numberOfInjuredPlayers,
-                      int generalMood) {
+    public ClubReport(int totalSalaries, int lowestSalary, int highestSalary, Player bestPlayer, Player worstPlayer, int numberOfPlayers, int pitchQuality, int numberOfInjuredPlayers, int generalMood) {
         this.totalSalaries = totalSalaries;
         this.lowestSalary = lowestSalary;
         this.highestSalary = highestSalary;

@@ -31,7 +31,7 @@ public class Grass {
                 this.grassType = type;
             }
         } catch (IOException ex) {
-            //do nothing
+        //do nothing
         }
     }
 }

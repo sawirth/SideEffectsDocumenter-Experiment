@@ -8,7 +8,7 @@ import java.util.Date;
 
 //IO
 public class Task1 {
-//    @Test
+    @Test
     public void test01() {
         /* For Logging; do not make any changes in the following three lines */
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

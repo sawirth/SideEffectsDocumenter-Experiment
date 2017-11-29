@@ -21,7 +21,7 @@ public class TrainingGround {
     }
 
     public void upgrade(int upgradeType, Path notes) {
-        switch (upgradeType) {
+        switch(upgradeType) {
             case 1:
                 getEquipment().upgradeEquipment(10);
                 getPitch().upgradePitch(PitchType.type1(), notes);

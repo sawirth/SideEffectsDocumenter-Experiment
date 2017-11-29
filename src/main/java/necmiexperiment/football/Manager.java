@@ -34,7 +34,7 @@ public class Manager {
         try (BufferedWriter writer = Files.newBufferedWriter(club.notes())) {
             writer.write(message);
         } catch (IOException ex) {
-            //do nothing
+        //do nothing
         }
     }
 
@@ -59,14 +59,6 @@ public class Manager {
         int lowestSalary = Accountant.getLowestSalary(club.team.playerList);
         int numberOfInjuredPlayers = club.team.playerList.stream().filter(Player::isInjured).collect(Collectors.toList()).size();
         int pitchQuality = club.trainingGround.pitch.getQuality();
-        return new ClubReport(salarySum,
-                              lowestSalary,
-                              highestSalary,
-                              bestPlayer,
-                              worstPlayer,
-                              club.team.playerList.size(),
-                              pitchQuality,
-                              numberOfInjuredPlayers,
-                              100);
+        return new ClubReport(salarySum, lowestSalary, highestSalary, bestPlayer, worstPlayer, club.team.playerList.size(), pitchQuality, numberOfInjuredPlayers, 100);
     }
 }
