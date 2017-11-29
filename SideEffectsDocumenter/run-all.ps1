@@ -15,7 +15,7 @@ $puranoCP = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\S
 
 # Specify the root path to the .class files or the folder of the .jar file which should be analyzed
 # If you want to analyze a jar file, add the path to the file with a '\*' at the end
-$homeDir = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\build\classes\main\'
+$homeDir = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment\build\classes\java\main\'
 
 $pkg = 'com.random' # Specify the package which should be analyzed
 $outputPath = 'C:\Users\Sandro\Documents\GitHub\SideEffectsDocumenter-Experiment' # Specify the directory where the purano results should be saved
