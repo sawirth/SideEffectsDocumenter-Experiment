@@ -1,7 +1,9 @@
 package ctrl;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
@@ -25,11 +27,6 @@ public class Ctrl1 {
             double difference = Math.abs(price - originalPrice);
             if (difference > 0.001)
             {
-                //if the file was modified we reset it here
-                PrintWriter writer = new PrintWriter(filePath);
-                writer.print("100");
-                writer.close();
-
                 //let the test fail
                 Assert.fail("Your test modified the Database which is not allowed.");
             }
@@ -38,5 +35,12 @@ public class Ctrl1 {
         {
             e.printStackTrace();
         }
+    }
+
+    @After
+    public void tearDown() throws FileNotFoundException {
+        PrintWriter writer = new PrintWriter(filePath);
+        writer.print("100");
+        writer.close();
     }
 }
