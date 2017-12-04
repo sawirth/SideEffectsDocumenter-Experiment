@@ -8,6 +8,7 @@ import ch.uzh.ifi.seal.advertisement.service.YoutubeService;
 import ch.uzh.ifi.seal.customer.model.Customer;
 import ch.uzh.ifi.seal.customer.service.CustomerService;
 import ch.uzh.ifi.seal.advertisement.service.SpamService;
+import ch.uzh.ifi.seal.pricing.service.DealOfferService;
 import ch.uzh.ifi.seal.product.model.Product;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -18,13 +19,15 @@ public class AdvertisementController {
     private final SpamService spamService;
     private final YoutubeService youtubeService;
     private final VideoEditor videoEditor;
+    private final DealOfferService dealOfferService;
 
     public AdvertisementController() {
-        this.advertisementPageService = new AdvertisementPageService();
-        this.customerService = new CustomerService();
-        this.spamService = new SpamService();
-        this.youtubeService = new YoutubeService();
-        this.videoEditor = new VideoEditor();
+        advertisementPageService = new AdvertisementPageService();
+        customerService = new CustomerService();
+        spamService = new SpamService();
+        youtubeService = new YoutubeService();
+        videoEditor = new VideoEditor();
+        dealOfferService = new DealOfferService();
     }
 
     public void createTheUltimateAdvertisement(Product product) {
@@ -47,6 +50,6 @@ public class AdvertisementController {
         //Customers always want to make a good deal so we offer them one but we limit the quantity
         double discount = 0.5;
         int quantity = 100;
-        //TODO Deal mit Seiteneffekt
+        dealOfferService.makeDeal(discount, quantity, product);
     }
 }

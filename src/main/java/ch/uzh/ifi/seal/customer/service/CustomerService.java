@@ -8,9 +8,9 @@ import java.util.Set;
 public class CustomerService {
     public Set<Customer> loadCustomers() {
         return new HashSet<>(Arrays.asList(
-                new Customer("Sepp Trütsch", "sepp@trütsch.ch"),
-                new Customer("Max Mustermann", "max.mustermann@muster.ch"),
-                new Customer("Hans Wurst", "theWurster@gmx.ch")
+                new Customer("Sepp Trütsch", "sepp@trütsch.ch", "Zurich"),
+                new Customer("Max Mustermann", "max.mustermann@muster.ch", "Basel"),
+                new Customer("Hans Wurst", "theWurster@gmx.ch", "Bern")
         ));
     }
 }

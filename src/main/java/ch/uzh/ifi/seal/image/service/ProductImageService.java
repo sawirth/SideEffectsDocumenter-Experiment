@@ -1,7 +1,6 @@
 package ch.uzh.ifi.seal.image.service;
 
 import ch.uzh.ifi.seal.image.model.ProductImage;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

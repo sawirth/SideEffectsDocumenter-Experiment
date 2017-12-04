@@ -21,6 +21,14 @@ public class WriterService {
         return text.toString();
     }
 
+    public String writeTagline(Product product) {
+        return writeAdvertisementText(product, 10);
+    }
+
+    public String writeDescription(Product product) {
+        return writeAdvertisementText(product, 100);
+    }
+
     private String generateWord(int numberOfCharacters) {
         random = ThreadLocalRandom.current();
         StringBuilder word = new StringBuilder();

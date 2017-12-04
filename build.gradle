@@ -18,9 +18,21 @@ test {
     exclude 'necmiexperiment/**'
 }
 
-task task1 (type: Test) {
+task task1 (type: Test, dependsOn: ['test1', 'ctrl1']) {
     group = "experiment"
+}
+
+task test1 (type: Test) {
+    group = "experiment helper"
     include '**/Test1*'
+    outputs.upToDateWhen {false}
+}
+
+task ctrl1 (type: Test) {
+    group = "experiment helper"
     include '**/Ctrl1**'
     outputs.upToDateWhen {false}
 }
+
+ctrl1.mustRunAfter test1
+

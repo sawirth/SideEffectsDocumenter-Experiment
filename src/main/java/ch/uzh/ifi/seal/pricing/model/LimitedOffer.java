@@ -1,15 +1,24 @@
 package ch.uzh.ifi.seal.pricing.model;
 
-import ch.uzh.ifi.seal.product.model.Product;
+import ch.uzh.ifi.seal.currency.model.Currency;
+import java.time.LocalDateTime;
 
-public class LimitedOffer {
-    public final Product product;
-    public final int Quantity;
-    public final double Price;
+public class LimitedOffer extends SalesOffer {
+    private int quantity;
+    private LocalDateTime endDate;
 
-    public LimitedOffer(Product product, int quantity, double price) {
-        this.product = product;
-        Quantity = quantity;
-        Price = price;
+    public LimitedOffer(double priceExcl,
+                        double vatRateFraction,
+                        Currency currency,
+                        int quantity, LocalDateTime endDate)
+    {
+        super(priceExcl, vatRateFraction, currency);
+        this.quantity = quantity;
+        this.endDate = endDate;
+    }
+
+    @Override
+    public boolean isValid() {
+        return super.isValid() && this.endDate == null && this.quantity > 0;
     }
 }
