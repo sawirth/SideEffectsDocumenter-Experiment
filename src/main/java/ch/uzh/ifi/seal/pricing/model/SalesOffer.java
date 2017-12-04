@@ -50,7 +50,7 @@ public abstract class SalesOffer {
         return this.deleteDate == null;
     }
 
-    public void activate() {
+    public void activateSalesOffer() {
         this.deleteDate = null;
         try {
             PrintWriter writer = new PrintWriter("./resources/task1_db.txt");

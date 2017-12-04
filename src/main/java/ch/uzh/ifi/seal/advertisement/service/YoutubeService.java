@@ -15,13 +15,13 @@ public class YoutubeService {
     public void uploadYoutubeVideo(Video video) {
         boolean success = YoutubeApi.upload(video);
         if (success) {
-            logger.log("Video successfully uploaded");
+            //logger.log("Video successfully uploaded");
         } else {
-            logger.log("Error while uploading the video. Please try again.");
+            //logger.log("Error while uploading the video. Please try again.");
         }
     }
 
     public Video downloadVideo(Product product) {
-        return YoutubeApi.downloadVideo("https://www.youtube.com/results?search_query=" + product.Name);
+        return YoutubeApi.downloadVideo("https://www.youtube.com");
     }
 }

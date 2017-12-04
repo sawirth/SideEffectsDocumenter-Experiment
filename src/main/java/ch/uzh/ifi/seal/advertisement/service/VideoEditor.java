@@ -5,7 +5,7 @@ import ch.uzh.ifi.seal.product.model.Product;
 
 public class VideoEditor {
     public Video createAdvertisementVideo(Product product, int maxLengthInMinutes) {
-        String title = "NEW ARRIVAL! " + product.Brand + " " + product.Name;
+        String title = "NEW ARRIVAL!";
         return new Video(title, maxLengthInMinutes);
     }
 }

@@ -16,9 +16,12 @@ dependencies {
 
 test {
     exclude 'necmiexperiment/**'
+    exclude 'ctrl/**'
+    exclude 'task1/**'
 }
 
 task task1 (type: Test, dependsOn: ['test1', 'ctrl1']) {
+    exclude 'necmiexperiment/**'
     group = "experiment"
 }
 

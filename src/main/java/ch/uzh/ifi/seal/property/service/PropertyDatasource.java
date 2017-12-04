@@ -2,7 +2,6 @@ package ch.uzh.ifi.seal.property.service;
 
 import ch.uzh.ifi.seal.product.model.Product;
 import ch.uzh.ifi.seal.property.model.Property;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;

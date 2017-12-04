@@ -15,6 +15,6 @@ public class DealOfferService {
                                               quantity,
                                               LocalDateTime.now().plusDays(10));
 
-        product.SalesOffer.activate();
+        product.SalesOffer.activateSalesOffer();
     }
 }

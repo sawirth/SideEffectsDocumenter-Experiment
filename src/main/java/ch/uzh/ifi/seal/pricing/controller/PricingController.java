@@ -9,8 +9,10 @@ import ch.uzh.ifi.seal.pricing.model.SalesOffer;
 import ch.uzh.ifi.seal.pricing.service.RelativePricingService;
 import ch.uzh.ifi.seal.product.model.Product;
 import ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService;
+import ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData;
 import ch.uzh.ifi.seal.vatrate.service.VatRateService;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Set;
 
 public class PricingController {
@@ -46,13 +48,22 @@ public class PricingController {
                     + relativePricingService.getCategoryFraction(product.Category);
 
             //Find the cheapest purchase price
-            double bestPurchasePrice = product.PurchasingInformation.stream()
-                    .min(Comparator.comparingDouble(p -> p.priceExcl))
-                    .get().priceExcl;
+            double bestPurchasePrice = findBestPurchasePrice(product.PurchasingInformation);
 
             salesOffer = new RelativeOffer(bestPurchasePrice, fraction, vatRateFraction, Currency.CHF);
         }
 
         product.SalesOffer = salesOffer;
+    }
+
+    private double findBestPurchasePrice(List<SupplierPurchaseData> supplierPurchaseDataList) {
+        double bestPrice = supplierPurchaseDataList.get(0).priceExcl;
+        for (SupplierPurchaseData supplierPurchaseData : supplierPurchaseDataList) {
+            if (supplierPurchaseData.priceExcl < bestPrice) {
+                bestPrice = supplierPurchaseData.priceExcl;
+            }
+        }
+
+        return bestPrice;
     }
 }

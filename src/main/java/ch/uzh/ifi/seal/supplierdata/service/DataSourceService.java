@@ -4,8 +4,8 @@ import ch.uzh.ifi.seal.currency.model.Currency;
 import ch.uzh.ifi.seal.supplierdata.model.DataSource;
 import ch.uzh.ifi.seal.supplierdata.model.Supplier;
 import ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class DataSourceService {
     public SupplierPurchaseData findSupplierPurchaseData(Supplier supplier, String productName, String manufacturerKey, String ean) {
@@ -13,11 +13,7 @@ public class DataSourceService {
         dataSource.connect();
         List<SupplierPurchaseData> supplierPurchaseDatas = dataSource.download();
 
-        List<SupplierPurchaseData> matched = supplierPurchaseDatas.stream()
-                .filter(spd -> spd.ManufacturerKey.equals(manufacturerKey)
-                    && spd.ProductName.equals(productName)
-                    && spd.Ean.equals(ean))
-                .collect(Collectors.toList());
+        List<SupplierPurchaseData> matched = findMatchingData(supplierPurchaseDatas, productName, manufacturerKey, ean);
 
         if (matched.size() > 0) {
             return matched.get(0);
@@ -32,5 +28,22 @@ public class DataSourceService {
                 11,
                 45,
                 Currency.CHF);
+    }
+
+    private List<SupplierPurchaseData> findMatchingData(List<SupplierPurchaseData> supplierPurchaseDatas,
+                                                        String productName,
+                                                        String manufacturerKey,
+                                                        String ean)
+    {
+        List<SupplierPurchaseData> matchedData = new ArrayList<>();
+        for (SupplierPurchaseData supplierPurchaseData : supplierPurchaseDatas) {
+            if (supplierPurchaseData.ProductName.equals(productName)
+                    && supplierPurchaseData.ManufacturerKey.equals(manufacturerKey)
+                    && supplierPurchaseData.Ean.equals(ean)) {
+                matchedData.add(supplierPurchaseData);
+            }
+        }
+
+        return matchedData;
     }
 }

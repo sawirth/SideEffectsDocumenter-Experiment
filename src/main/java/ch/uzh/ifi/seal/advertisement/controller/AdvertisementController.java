@@ -10,6 +10,7 @@ import ch.uzh.ifi.seal.customer.service.CustomerService;
 import ch.uzh.ifi.seal.advertisement.service.SpamService;
 import ch.uzh.ifi.seal.pricing.service.DealOfferService;
 import ch.uzh.ifi.seal.product.model.Product;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -37,9 +38,10 @@ public class AdvertisementController {
 
         //Next step is to send some spam mails to our customers
         Set<Customer> customers = customerService.loadCustomers();
-        Set<String> emailAddresses = customers.stream()
-                .map(c -> c.Email)
-                .collect(Collectors.toSet());
+        Set<String> emailAddresses = new HashSet<>();
+        for (Customer customer : customers) {
+            emailAddresses.add(customer.Email);
+        }
 
         spamService.sendSpam(product, emailAddresses);
         

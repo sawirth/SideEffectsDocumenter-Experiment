@@ -2,7 +2,6 @@ package ch.uzh.ifi.seal.advertisement.service;
 
 import ch.uzh.ifi.seal.advertisement.model.Image;
 import ch.uzh.ifi.seal.product.model.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +16,6 @@ public class ImageProviderService {
     }
 
     private Image findImage(String searchText) {
-        return new Image("www.google.ch/query=" + searchText, "randomFileName");
+        return new Image("www.google.ch/", "randomFileName");
     }
 }

@@ -17,7 +17,7 @@ public class SpamService {
 
     public void sendSpam(Product product, Set<String> emailAddresses) {
         String subject = "YOU WON'T BELIEVE THIS DEAL!";
-        String content = product.Name + " arrived in our shop with an unbelievable price. Be quick to grab one for you!";
+        String content = "New product arrived in our shop with an unbelievable price. Be quick to grab one for you!";
 
         int successful = 0;
         for (String email : emailAddresses) {
@@ -25,7 +25,7 @@ public class SpamService {
             if (success) {
                 successful++;
             } else {
-                logger.log("Email could not be sent to " + email);
+                logger.log("Email could not be sent");
             }
         }
     }
