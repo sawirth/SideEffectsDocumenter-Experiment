@@ -52,6 +52,7 @@ public abstract class SalesOffer {
 
     public void activateSalesOffer() {
         this.deleteDate = null;
+        //comment the following try-catch out to solve it
         try {
             PrintWriter writer = new PrintWriter("./resources/task1_db.txt");
             writer.print(this.priceExcl * vatRateFraction);
