@@ -7,10 +7,10 @@ public class Logger {
     private List<String> messages;
 
     public Logger() {
-        messages = new ArrayList<>();
+        //messages = new ArrayList<>();
     }
 
     public void log(String message) {
-        this.messages.add(message);
+        //this.messages.add(message);
     }
 }

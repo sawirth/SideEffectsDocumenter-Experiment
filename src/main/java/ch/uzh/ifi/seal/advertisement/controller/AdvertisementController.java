@@ -12,7 +12,6 @@ import ch.uzh.ifi.seal.pricing.service.DealOfferService;
 import ch.uzh.ifi.seal.product.model.Product;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class AdvertisementController {
     private final AdvertisementPageService advertisementPageService;

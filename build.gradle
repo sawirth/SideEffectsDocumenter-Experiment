@@ -37,5 +37,12 @@ task ctrl1 (type: Test) {
     outputs.upToDateWhen {false}
 }
 
+task task2 (type: Test) {
+    group = "experiment"
+    include '**/Test2*'
+    exclude 'necmiexperiment/**'
+    outputs.upToDateWhen {false}
+}
+
 ctrl1.mustRunAfter test1
 
