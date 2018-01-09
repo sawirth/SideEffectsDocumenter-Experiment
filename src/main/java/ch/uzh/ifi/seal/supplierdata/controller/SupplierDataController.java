@@ -15,11 +15,31 @@ public class SupplierDataController {
 
     private final SupplierService supplierService;
 
+    /**
+     * Purity: FieldModifier   <br>
+     */
     public SupplierDataController() {
         dataSourceService = new DataSourceService();
         supplierService = new SupplierService();
     }
 
+    /**
+     * Purity: Native   <br>
+     * 
+     * Return value depends on the following:
+     * <ul>
+     * <li>      Argument: productName (String)      </li>
+     * <li>      Argument: manufacturerKey (String)      </li>
+     * <li>      Argument: ean (String)      </li>
+     * <li>      Field: this.supplierService (ch.uzh.ifi.seal.supplierdata.service.SupplierService;)      </li>
+     * </ul>
+     * 
+     * The method calls native code:
+     * <ul>
+     * <li>      {@link SupplierService#getSwissSuppliers} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
+     * <li>      {@link SupplierDataController#createSupplierPurchaseData} (origin: {@link java.util.Collection#toArray})      </li>
+     * </ul>
+     */
     public List<SupplierPurchaseData> findSupplierData(String productName, String manufacturerKey, String ean) {
         //Try to find matching products in the datasources of our swiss suppliers
         Set<Supplier> suppliers = supplierService.getSwissSuppliers();
@@ -30,6 +50,19 @@ public class SupplierDataController {
         return supplierPurchaseDataList;
     }
 
+    /**
+     * Purity: Native   <br>
+     * 
+     * Return value depends on the following:
+     * <ul>
+     * <li>      Argument: suppliers (Set<Supplier>)      </li>
+     * </ul>
+     * 
+     * The method calls native code:
+     * <ul>
+     * <li>      {@link DataSourceService#findSupplierPurchaseData} (origin: {@link java.util.Collection#toArray})      </li>
+     * </ul>
+     */
     private List<SupplierPurchaseData> createSupplierPurchaseData(Set<Supplier> suppliers, String productName, String manufacturerKey, String ean) {
         List<SupplierPurchaseData> supplierPurchaseData = new ArrayList<>();
         for (Supplier supplier : suppliers) {

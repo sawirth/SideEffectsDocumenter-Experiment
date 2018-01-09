@@ -4,6 +4,15 @@ import ch.uzh.ifi.seal.pricing.model.Price;
 import ch.uzh.ifi.seal.vatrate.service.VatRateService;
 
 public class ProfitService {
+
+    /**
+     * Purity: Stateless   <br>
+     * 
+     * Return value depends on the following:
+     * <ul>
+     * <li>      Argument: price (Price)      </li>
+     * </ul>
+     */
     public static double calculateProfit(Price price) {
         VatRateService vatRateService = new VatRateService();
         RelativePricingService relativePricingService = new RelativePricingService();

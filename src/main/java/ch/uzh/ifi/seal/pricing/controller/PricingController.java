@@ -16,11 +16,18 @@ import java.util.List;
 import java.util.Set;
 
 public class PricingController {
+
     private final CompetitorController competitorController;
+
     private final CompetitorComparisonService competitorComparisonService;
+
     private final RelativePricingService relativePricingService;
+
     private final VatRateService vatRateService;
 
+    /**
+     * Purity: FieldModifier   <br>
+     */
     public PricingController() {
         competitorController = new CompetitorController();
         competitorComparisonService = new CompetitorComparisonService();
@@ -28,34 +35,49 @@ public class PricingController {
         vatRateService = new VatRateService();
     }
 
+    /**
+     * Purity: ArgumentModifier, Native   <br>
+     * 
+     * Modifies the following arguments:
+     * <ul>
+     * <li>      product      </li>
+     * </ul>
+     * 
+     * The method calls native code:
+     * <ul>
+     * <li>      {@link CompetitorController#crawlCompetitors} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
+     * <li>      {@link CompetitorComparisonService#findBestCompetitorSalesInformation}      </li>
+     * </ul>
+     */
     public void setBestPriceForProduct(Product product) {
         //We need to correct VatRate (Mehrwertsteuer) for this product to make a correct price
         double vatRateFraction = vatRateService.getVatRateFraction("Switzerland");
-
         //Crawl competitors to find their prices
         Set<CompetitorSalesInformation> competitorSalesInformationSet = competitorController.crawlCompetitors(product);
-
         SalesOffer salesOffer = null;
         if (competitorSalesInformationSet.size() > 0) {
             //Find best competitor based on certain rules
-            CompetitorSalesInformation bestCompetitor =
-                    competitorComparisonService.findBestCompetitorSalesInformation(competitorSalesInformationSet);
-
+            CompetitorSalesInformation bestCompetitor = competitorComparisonService.findBestCompetitorSalesInformation(competitorSalesInformationSet);
             salesOffer = new CompetitorOffer(vatRateFraction, Currency.CHF, bestCompetitor.Price, 2.5);
         } else {
             //In case we don't find a competitor we have set the price based on brand and category
-            double fraction = relativePricingService.getBrandFraction(product.Brand)
-                    + relativePricingService.getCategoryFraction(product.Category);
-
+            double fraction = relativePricingService.getBrandFraction(product.Brand) + relativePricingService.getCategoryFraction(product.Category);
             //Find the cheapest purchase price
             double bestPurchasePrice = findBestPurchasePrice(product.PurchasingInformation);
-
             salesOffer = new RelativeOffer(bestPurchasePrice, fraction, vatRateFraction, Currency.CHF);
         }
-
         product.SalesOffer = salesOffer;
     }
 
+    /**
+     * Purity: Stateful   <br>
+     * 
+     * Return value depends on the following:
+     * <ul>
+     * <li>      Argument: supplierPurchaseDataList (List<SupplierPurchaseData>)      </li>
+     * <li>      Field of subclass: SupplierPurchaseData.priceExcl (double)      </li>
+     * </ul>
+     */
     private double findBestPurchasePrice(List<SupplierPurchaseData> supplierPurchaseDataList) {
         double bestPrice = supplierPurchaseDataList.get(0).priceExcl;
         for (SupplierPurchaseData supplierPurchaseData : supplierPurchaseDataList) {
@@ -63,7 +85,6 @@ public class PricingController {
                 bestPrice = supplierPurchaseData.priceExcl;
             }
         }
-
         return bestPrice;
     }
 }

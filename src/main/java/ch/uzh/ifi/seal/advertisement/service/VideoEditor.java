@@ -4,6 +4,10 @@ import ch.uzh.ifi.seal.advertisement.model.Video;
 import ch.uzh.ifi.seal.product.model.Product;
 
 public class VideoEditor {
+
+    /**
+     * Purity: Stateless   <br>
+     */
     public Video createAdvertisementVideo(Product product, int maxLengthInMinutes) {
         String title = "NEW ARRIVAL!";
         return new Video(title, maxLengthInMinutes);

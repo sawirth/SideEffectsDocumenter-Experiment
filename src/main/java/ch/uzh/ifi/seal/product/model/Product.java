@@ -10,15 +10,26 @@ import java.util.List;
 import java.util.Set;
 
 public class Product {
+
     public String Name;
+
     public String Brand;
+
     public String ManufacturerKey;
+
     public String Ean;
+
     public Set<MarketingInformation> MarketingInformationSet;
+
     public List<ProductImage> ProductImages;
+
     public List<Video> ProductVideos;
+
     public List<SupplierPurchaseData> PurchasingInformation;
+
     public Set<Property> Properties;
+
     public SalesOffer SalesOffer;
+
     public String Category;
 }

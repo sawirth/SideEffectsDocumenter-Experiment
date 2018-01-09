@@ -7,22 +7,32 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class PropertyDatasource {
+
     public final String url;
 
+    /**
+     * Purity: FieldModifier   <br>
+     */
     public PropertyDatasource(String url) {
         this.url = url;
     }
 
+    /**
+     * Purity: Stateless   <br>
+     */
     public Property findColor(Product product) {
         return new Property("Color", "Red");
     }
 
+    /**
+     * Purity: Native   <br>
+     * 
+     * The method calls native code:
+     * <ul>
+     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
+     * </ul>
+     */
     public Set<Property> findDimensions(Product product) {
-        return new HashSet<>(Arrays.asList(
-           new Property("Length", "30cm"),
-           new Property("Width", "25cm"),
-           new Property("Height", "33cm"),
-           new Property("Weight", "1.2kg")
-        ));
+        return new HashSet<>(Arrays.asList(new Property("Length", "30cm"), new Property("Width", "25cm"), new Property("Height", "33cm"), new Property("Weight", "1.2kg")));
     }
 }

@@ -1,16 +1,115 @@
 [
   {
-    "fullName": "com.random",
-    "methodMap": []
-  },
-  {
-    "fullName": "com.random.Random",
+    "fullName": "ch.uzh.ifi.seal.advertisement.service.PhotoshopService",
     "methodMap": [
       {
-        "name": "com.random.Random.testModifyArg",
+        "name": "ch.uzh.ifi.seal.advertisement.service.PhotoshopService.blurImage",
+        "purityType": "ArgumentModifier",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.advertisement.model.Image",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 0,
+            "hasDirectAccess": true,
+            "isDynamicEffect": false,
+            "owner": "",
+            "name": "",
+            "originOwner": "",
+            "originName": ""
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.PhotoshopService.addInstagramFilter",
+        "purityType": "ArgumentModifier",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.advertisement.model.Image",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 0,
+            "hasDirectAccess": true,
+            "isDynamicEffect": false,
+            "owner": "",
+            "name": "",
+            "originOwner": "",
+            "originName": ""
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.PhotoshopService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.PhotoshopService.makeBlackAndWhite",
+        "purityType": "ArgumentModifier",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.advertisement.model.Image"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 0,
+            "hasDirectAccess": true,
+            "isDynamicEffect": false,
+            "owner": "",
+            "name": "",
+            "originOwner": "",
+            "originName": ""
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.crawler.Talando",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.Talando.getSalesInformation",
         "purityType": "Stateless",
         "methodArguments": [
-          "java.awt.Rectangle"
+          "ch.uzh.ifi.seal.product.model.Product"
         ],
         "fieldModifiers": [],
         "staticFieldModifiers": [],
@@ -24,7 +123,27 @@
         "nativeEffects": []
       },
       {
-        "name": "com.random.Random.jarTest",
+        "name": "ch.uzh.ifi.seal.competitor.crawler.Talando.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.image.service.ProductImageService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.image.service.ProductImageService.\u003cinit\u003e",
         "purityType": "Stateless",
         "methodArguments": [],
         "fieldModifiers": [],
@@ -39,7 +158,37 @@
         "nativeEffects": []
       },
       {
-        "name": "com.random.Random.\u003cinit\u003e",
+        "name": "ch.uzh.ifi.seal.image.service.ProductImageService.uploadImagesFromDisk",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.ArrayList",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.crawler.CrawlerFactory",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.CrawlerFactory.\u003cinit\u003e",
         "purityType": "Stateless",
         "methodArguments": [],
         "fieldModifiers": [],
@@ -52,6 +201,4560 @@
           "dependsOnThis": false
         },
         "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.CrawlerFactory.loadCrawlers",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService.lambda$findBestCompetitorSalesInformation$0",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "int",
+          "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "Competitor",
+              "owner": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "DeliveryDuration",
+              "owner": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+              "desc": "int",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "Price",
+              "owner": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+              "desc": "double",
+              "isThisField": false,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0,
+            1
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService.findBestCompetitorSalesInformation",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.util.Set"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService.getPriceWithPenalty",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "Price",
+              "owner": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+              "desc": "double",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "Competitor",
+              "owner": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "DeliveryDuration",
+              "owner": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+              "desc": "int",
+              "isThisField": false,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0,
+            1
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService.getNamePenaltyFraction",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.model.PriceController",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.PriceController.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "priceList",
+            "type": "Ljava/util/List",
+            "owner": "ch/uzh/ifi/seal/pricing/model/PriceController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.PriceController.checkSupplier",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.supplierdata.model.Supplier"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "priceList",
+              "owner": "ch.uzh.ifi.seal.pricing.model.PriceController",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.PriceController.controlPrices",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.supplierdata.service.SupplierService",
+            "name": "getSwissSuppliers",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.Set",
+            "name": "add",
+            "originOwner": "java.util.Set",
+            "originName": "add",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.Set",
+            "name": "removeAll",
+            "originOwner": "java.util.Set",
+            "originName": "removeAll",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.supplierdata.model.Supplier",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.model.Supplier.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "name",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/Supplier",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.model.Supplier.acceptPrice",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.model.AdvertisementPage",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.model.AdvertisementPage.hideInShop",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.model.AdvertisementPage.makeVisibleInShop",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.model.AdvertisementPage.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product",
+          "java.util.List",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "Product",
+            "type": "Lch/uzh/ifi/seal/product/model/Product",
+            "owner": "ch/uzh/ifi/seal/advertisement/model/AdvertisementPage",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Images",
+            "type": "Ljava/util/List",
+            "owner": "ch/uzh/ifi/seal/advertisement/model/AdvertisementPage",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "AdvertisementText",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/advertisement/model/AdvertisementPage",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.log.Logger",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.log.Logger.log",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.log.Logger.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.crawler.Faust",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.Faust.getSalesInformation",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.Faust.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.model.SalesOffer",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.getVatRateFraction",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "vatRateFraction",
+              "owner": "ch.uzh.ifi.seal.pricing.model.SalesOffer",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.getPriceExcl",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "priceExcl",
+              "owner": "ch.uzh.ifi.seal.pricing.model.SalesOffer",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.activateSalesOffer",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.io.PrintWriter",
+            "name": "close",
+            "originOwner": "java.io.Writer",
+            "originName": "close",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.io.PrintWriter",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.io.FileOutputStream",
+            "originName": "open",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.io.PrintWriter",
+            "name": "print",
+            "originOwner": "java.io.Writer",
+            "originName": "write",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "double",
+          "double",
+          "ch.uzh.ifi.seal.currency.model.Currency"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "vatRateFraction",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "priceExcl",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "currency",
+            "type": "Lch/uzh/ifi/seal/currency/model/Currency",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              4
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.changePrice",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "double",
+          "boolean"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "priceExcl",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [
+              {
+                "name": "vatRateFraction",
+                "owner": "ch.uzh.ifi.seal.pricing.model.SalesOffer",
+                "desc": "double",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.deactivate",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "deleteDate",
+            "type": "Ljava/time/LocalDateTime",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.getPriceIncl",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "priceExcl",
+              "owner": "ch.uzh.ifi.seal.pricing.model.SalesOffer",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "vatRateFraction",
+              "owner": "ch.uzh.ifi.seal.pricing.model.SalesOffer",
+              "desc": "double",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.isValid",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "quantity",
+              "owner": "ch.uzh.ifi.seal.pricing.model.LimitedOffer",
+              "desc": "int",
+              "isThisField": false,
+              "isDynamicEffect": true
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.SalesOffer.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.PricingService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.verify",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.getHighestPrice",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "priceHistoryService",
+            "type": "Lch/uzh/ifi/seal/pricing/service/PriceHistoryService",
+            "owner": "ch/uzh/ifi/seal/pricing/service/PricingService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "statisticsService",
+            "type": "Lch/uzh/ifi/seal/pricing/service/StatisticsService",
+            "owner": "ch/uzh/ifi/seal/pricing/service/PricingService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "logger",
+            "type": "Lch/uzh/ifi/seal/log/Logger",
+            "owner": "ch/uzh/ifi/seal/pricing/service/PricingService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.comparePriceToOutlier",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "isUpperOutlier",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "isLowerOutlier",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.getProportionToAverage",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0,
+            1,
+            2
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.comparePrices",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.PricingService",
+            "name": "comparePriceToMedian",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.PricingService",
+            "name": "comparePriceToOutlier",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.comparePriceToMedian",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "getMedian",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.getLowestPrice",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.calculateProportionToAveragePrice",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0,
+            1
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingService.verifyPrice",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.PricingService",
+            "name": "comparePrices",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.SpamService",
+            "name": "sendSpam",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.model.PriceController",
+            "name": "controlPrices",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.model.CompetitorSalesInformation.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "double",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "DeliveryDuration",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/competitor/model/CompetitorSalesInformation",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              3
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Competitor",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/competitor/model/CompetitorSalesInformation",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Price",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/competitor/model/CompetitorSalesInformation",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.crawler.ICompetitorCrawler",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.ICompetitorCrawler.getSalesInformation",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.PricingHelper",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingHelper.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PricingHelper.doStuff",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.model.CompetitorOffer",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.CompetitorOffer.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "double",
+          "ch.uzh.ifi.seal.currency.model.Currency",
+          "double",
+          "double"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "vatRateFraction",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "priceExcl",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "currency",
+            "type": "Lch/uzh/ifi/seal/currency/model/Currency",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "differenceToCompetitor",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/CompetitorOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              5
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "competitorPrice",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/CompetitorOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              3
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.DealOfferService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.DealOfferService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.DealOfferService.makeDeal",
+        "purityType": "ArgumentModifier, Native",
+        "methodArguments": [
+          "double",
+          "int",
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 3,
+            "hasDirectAccess": true,
+            "isDynamicEffect": false,
+            "owner": "",
+            "name": "",
+            "originOwner": "",
+            "originName": ""
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.model.SalesOffer",
+            "name": "activateSalesOffer",
+            "originOwner": "java.io.Writer",
+            "originName": "close",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.property.model.Property",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.property.model.Property.getValue",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "value",
+              "owner": "ch.uzh.ifi.seal.property.model.Property",
+              "desc": "java.lang.String;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.property.model.Property.changeValue",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "value",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/property/model/Property",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.property.model.Property.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "value",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/property/model/Property",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Name",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/property/model/Property",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.mail.service.SpamMailService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.mail.service.SpamMailService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService.isHigherThanHistory",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "priceHistory",
+              "owner": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService.isLowerThanHistory",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "priceHistory",
+              "owner": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService",
+              "desc": "java.util.List;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService.checkHistoryOfPrice",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService.calculateFuturePrice",
+        "purityType": "ArgumentModifier",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 0,
+            "hasDirectAccess": false,
+            "isDynamicEffect": false,
+            "owner": "ch.uzh.ifi.seal.pricing.model.Price",
+            "name": "setValue",
+            "originOwner": "ch.uzh.ifi.seal.pricing.model.Price",
+            "originName": "setValue"
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.PriceHistoryService.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "priceHistory",
+            "type": "Ljava/util/List",
+            "owner": "ch/uzh/ifi/seal/pricing/service/PriceHistoryService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "logger",
+            "type": "Lch/uzh/ifi/seal/log/Logger",
+            "owner": "ch/uzh/ifi/seal/pricing/service/PriceHistoryService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.ArrayList",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.vatrate.service.VatRateService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.vatrate.service.VatRateService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.vatrate.service.VatRateService.getVatRateFraction",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.product.model.Product",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.product.model.Product.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.controller.CompetitorController",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.controller.CompetitorController.crawlCompetitors",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.competitor.crawler.CrawlerFactory",
+            "name": "loadCrawlers",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.Set",
+            "name": "add",
+            "originOwner": "java.util.Set",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.controller.CompetitorController.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.service.YoutubeService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.YoutubeService.uploadYoutubeVideo",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.advertisement.model.Video"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.YoutubeService.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "logger",
+            "type": "Lch/uzh/ifi/seal/log/Logger",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/YoutubeService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.YoutubeService.downloadVideo",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.controller.AdvertisementController",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.controller.AdvertisementController.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "youtubeService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/YoutubeService",
+            "owner": "ch/uzh/ifi/seal/advertisement/controller/AdvertisementController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "customerService",
+            "type": "Lch/uzh/ifi/seal/customer/service/CustomerService",
+            "owner": "ch/uzh/ifi/seal/advertisement/controller/AdvertisementController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "spamService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/SpamService",
+            "owner": "ch/uzh/ifi/seal/advertisement/controller/AdvertisementController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "videoEditor",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/VideoEditor",
+            "owner": "ch/uzh/ifi/seal/advertisement/controller/AdvertisementController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "dealOfferService",
+            "type": "Lch/uzh/ifi/seal/pricing/service/DealOfferService",
+            "owner": "ch/uzh/ifi/seal/advertisement/controller/AdvertisementController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "advertisementPageService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/AdvertisementPageService",
+            "owner": "ch/uzh/ifi/seal/advertisement/controller/AdvertisementController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.AdvertisementPageService",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.security.AccessController",
+            "originName": "doPrivileged",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.controller.AdvertisementController.createTheUltimateAdvertisement",
+        "purityType": "ArgumentModifier, FieldModifier, Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "advertisementPageService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/AdvertisementPageService",
+            "owner": "ch/uzh/ifi/seal/advertisement/controller/AdvertisementController",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "advertisementPageService",
+                "owner": "ch.uzh.ifi.seal.advertisement.controller.AdvertisementController",
+                "desc": "ch.uzh.ifi.seal.advertisement.service.AdvertisementPageService;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 0,
+            "hasDirectAccess": false,
+            "isDynamicEffect": false,
+            "owner": "ch.uzh.ifi.seal.pricing.service.DealOfferService",
+            "name": "makeDeal",
+            "originOwner": "ch.uzh.ifi.seal.pricing.service.DealOfferService",
+            "originName": "makeDeal"
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.Set",
+            "name": "add",
+            "originOwner": "java.util.Set",
+            "originName": "add",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.customer.service.CustomerService",
+            "name": "loadCustomers",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.AdvertisementPageService",
+            "name": "createNewAdvertisementPage",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.DealOfferService",
+            "name": "makeDeal",
+            "originOwner": "java.io.Writer",
+            "originName": "close",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.RelativePricingService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.RelativePricingService.getBrandFraction",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.RelativePricingService.getCategoryFraction",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.RelativePricingService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.supplierdata.service.DataSourceService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.service.DataSourceService.findSupplierPurchaseData",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.supplierdata.model.Supplier",
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "ProductName",
+              "owner": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "Ean",
+              "owner": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "ManufacturerKey",
+              "owner": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            1,
+            2,
+            3
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.supplierdata.model.DataSource",
+            "name": "download",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.service.DataSourceService.findMatchingData",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "java.util.List",
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "ProductName",
+              "owner": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "ManufacturerKey",
+              "owner": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            },
+            {
+              "name": "Ean",
+              "owner": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+              "desc": "java.lang.String;",
+              "isThisField": false,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.service.DataSourceService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.property.service.PropertyImport",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.property.service.PropertyImport.getPropertiesForProduct",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.property.service.PropertyDatasource",
+            "name": "findDimensions",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.Set",
+            "name": "add",
+            "originOwner": "java.util.Set",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.property.service.PropertyImport.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.service.AdvertisementPageService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.AdvertisementPageService.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "photoshopService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/PhotoshopService",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/AdvertisementPageService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "imageProviderService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/ImageProviderService",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/AdvertisementPageService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "writerService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/WriterService",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/AdvertisementPageService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.security.AccessController",
+            "originName": "doPrivileged",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.AdvertisementPageService.createNewAdvertisementPage",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "writerService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/WriterService",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/AdvertisementPageService",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "writerService",
+                "owner": "ch.uzh.ifi.seal.advertisement.service.AdvertisementPageService",
+                "desc": "ch.uzh.ifi.seal.advertisement.service.WriterService;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "writeAdvertisementText",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.service.VideoEditor",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.VideoEditor.createAdvertisementVideo",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.VideoEditor.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.supplierdata.controller.SupplierDataController",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.controller.SupplierDataController.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "dataSourceService",
+            "type": "Lch/uzh/ifi/seal/supplierdata/service/DataSourceService",
+            "owner": "ch/uzh/ifi/seal/supplierdata/controller/SupplierDataController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "supplierService",
+            "type": "Lch/uzh/ifi/seal/supplierdata/service/SupplierService",
+            "owner": "ch/uzh/ifi/seal/supplierdata/controller/SupplierDataController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.controller.SupplierDataController.createSupplierPurchaseData",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.util.Set",
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.supplierdata.service.DataSourceService",
+            "name": "findSupplierPurchaseData",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.controller.SupplierDataController.findSupplierData",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "supplierService",
+              "owner": "ch.uzh.ifi.seal.supplierdata.controller.SupplierDataController",
+              "desc": "ch.uzh.ifi.seal.supplierdata.service.SupplierService;",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0,
+            1,
+            2
+          ],
+          "dependsOnThis": true
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.supplierdata.service.SupplierService",
+            "name": "getSwissSuppliers",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.supplierdata.controller.SupplierDataController",
+            "name": "createSupplierPurchaseData",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.supplierdata.model.Supplier",
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String",
+          "int",
+          "double",
+          "ch.uzh.ifi.seal.currency.model.Currency"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "Brand",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              4
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Supplier",
+            "type": "Lch/uzh/ifi/seal/supplierdata/model/Supplier",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "ManufacturerKey",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "ProductName",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              3
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "currency",
+            "type": "Lch/uzh/ifi/seal/currency/model/Currency",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              8
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "priceExcl",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              6
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Ean",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Stock",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/SupplierPurchaseData",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              5
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.marketing.model.MarketingInformation",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.marketing.model.MarketingInformation.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "Language",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/marketing/model/MarketingInformation",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "TagLine",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/marketing/model/MarketingInformation",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Description",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/marketing/model/MarketingInformation",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.competitor.crawler.Gigitec",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.Gigitec.getSalesInformation",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.competitor.crawler.Gigitec.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.model.RelativeOffer",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.RelativeOffer.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "double",
+          "double",
+          "double",
+          "ch.uzh.ifi.seal.currency.model.Currency"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "vatRateFraction",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "priceExcl",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "fraction",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/RelativeOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "purchasePrice",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/RelativeOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "currency",
+            "type": "Lch/uzh/ifi/seal/currency/model/Currency",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.StatisticsService.getSortedList",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.ArrayList",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.StatisticsService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.StatisticsService.isUpperOutlier",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0,
+            1
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "getMedian",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "standardDeviation",
+            "originOwner": "java.lang.StrictMath",
+            "originName": "sqrt",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.StatisticsService.isLowerOutlier",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price",
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0,
+            1
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "standardDeviation",
+            "originOwner": "java.lang.StrictMath",
+            "originName": "sqrt",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "getMedian",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.StatisticsService.getMedian",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.pricing.service.StatisticsService",
+            "name": "getSortedList",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.StatisticsService.standardDeviation",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.lang.Math",
+            "name": "pow",
+            "originOwner": "java.lang.StrictMath",
+            "originName": "pow",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.lang.Math",
+            "name": "sqrt",
+            "originOwner": "java.lang.StrictMath",
+            "originName": "sqrt",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.product.controller.ProductController",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.product.controller.ProductController.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "marketingInformationService",
+            "type": "Lch/uzh/ifi/seal/marketing/service/MarketingInformationService",
+            "owner": "ch/uzh/ifi/seal/product/controller/ProductController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "productImageService",
+            "type": "Lch/uzh/ifi/seal/image/service/ProductImageService",
+            "owner": "ch/uzh/ifi/seal/product/controller/ProductController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "youtubeService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/YoutubeService",
+            "owner": "ch/uzh/ifi/seal/product/controller/ProductController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "propertyImport",
+            "type": "Lch/uzh/ifi/seal/property/service/PropertyImport",
+            "owner": "ch/uzh/ifi/seal/product/controller/ProductController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.marketing.service.MarketingInformationService",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.security.AccessController",
+            "originName": "doPrivileged",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.product.controller.ProductController.createNewProduct",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "marketingInformationService",
+            "type": "Lch/uzh/ifi/seal/marketing/service/MarketingInformationService",
+            "owner": "ch/uzh/ifi/seal/product/controller/ProductController",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "marketingInformationService",
+                "owner": "ch.uzh.ifi.seal.product.controller.ProductController",
+                "desc": "ch.uzh.ifi.seal.marketing.service.MarketingInformationService;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.marketing.service.MarketingInformationService",
+            "name": "findMarketingInformationForProduct",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.property.service.PropertyImport",
+            "name": "getPropertiesForProduct",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.image.service.ProductImageService",
+            "name": "uploadImagesFromDisk",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.ArrayList",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.service.ImageProviderService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.ImageProviderService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.ImageProviderService.findSuitableImages",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product",
+          "java.lang.String",
+          "int"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            2
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.ImageProviderService.findImage",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.email.service.EmailClient",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.email.service.EmailClient.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.email.service.EmailClient.tryResend",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.email.model.Email"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.email.service.EmailClient.sendMail",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.customer.service.CustomerService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.customer.service.CustomerService.loadCustomers",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.customer.service.CustomerService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.supplierdata.model.DataSource",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.model.DataSource.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.supplierdata.model.Supplier"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "supplier",
+            "type": "Lch/uzh/ifi/seal/supplierdata/model/Supplier",
+            "owner": "ch/uzh/ifi/seal/supplierdata/model/DataSource",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.model.DataSource.download",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.ArrayList",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.util.Collection",
+            "originName": "toArray",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.model.DataSource.connect",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.supplierdata.service.SupplierService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.service.SupplierService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.supplierdata.service.SupplierService.getSwissSuppliers",
+        "purityType": "Native",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.model.LimitedOffer",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.LimitedOffer.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "double",
+          "double",
+          "ch.uzh.ifi.seal.currency.model.Currency",
+          "int",
+          "java.time.LocalDateTime"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "vatRateFraction",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "priceExcl",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "endDate",
+            "type": "Ljava/time/LocalDateTime",
+            "owner": "ch/uzh/ifi/seal/pricing/model/LimitedOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              6
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "currency",
+            "type": "Lch/uzh/ifi/seal/currency/model/Currency",
+            "owner": "ch/uzh/ifi/seal/pricing/model/SalesOffer",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "quantity",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/pricing/model/LimitedOffer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              5
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.LimitedOffer.isValid",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "quantity",
+              "owner": "ch.uzh.ifi.seal.pricing.model.LimitedOffer",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal",
+    "methodMap": []
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.property.service.PropertyDatasource",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.property.service.PropertyDatasource.findColor",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.property.service.PropertyDatasource.findDimensions",
+        "purityType": "Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.property.service.PropertyDatasource.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "url",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/property/service/PropertyDatasource",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.model.Price",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.Price.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "value",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/pricing/model/Price",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.Price.getValue",
+        "purityType": "Stateful",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "value",
+              "owner": "ch.uzh.ifi.seal.pricing.model.Price",
+              "desc": "int",
+              "isThisField": true,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": true
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.model.Price.setValue",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "value",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/pricing/model/Price",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.model.Image",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.model.Image.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "FileName",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/advertisement/model/Image",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Source",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/advertisement/model/Image",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.WriterService.writeAdvertisementText",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "random",
+            "type": "Ljava/util/Random",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/WriterService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "random",
+                "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+                "desc": "java.util.Random;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            1
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "generateWord",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.Random",
+            "name": "nextInt",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.WriterService.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "lower",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/WriterService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "alphabet",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/WriterService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "lower",
+                "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+                "desc": "java.lang.String;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.lang.String",
+            "name": "toLowerCase",
+            "originOwner": "java.security.AccessController",
+            "originName": "doPrivileged",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.WriterService.writeTagline",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "random",
+            "type": "Ljava/util/Random",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/WriterService",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "writeAdvertisementText",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.WriterService.generateWord",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "random",
+            "type": "Ljava/util/Random",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/WriterService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "random",
+                "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+                "desc": "java.util.Random;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.Random",
+            "name": "nextInt",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.WriterService.writeDescription",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "random",
+            "type": "Ljava/util/Random",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/WriterService",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "writeAdvertisementText",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.customer.model.Customer",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.customer.model.Customer.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "City",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/customer/model/Customer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Name",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/customer/model/Customer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Email",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/customer/model/Customer",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.model.Video",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.model.Video.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "int"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "lengthInSeconds",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/advertisement/model/Video",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Name",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/advertisement/model/Video",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.email.model.Email",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.email.model.Email.send",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.email.model.Email.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "java.lang.String",
+          "java.lang.String"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "Subject",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/email/model/Email",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Address",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/email/model/Email",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "Content",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/email/model/Email",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.controller.PricingController",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.controller.PricingController.findBestPurchasePrice",
+        "purityType": "Stateful",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [
+            {
+              "name": "priceExcl",
+              "owner": "ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData",
+              "desc": "double",
+              "isThisField": false,
+              "isDynamicEffect": false
+            }
+          ],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.controller.PricingController.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "competitorController",
+            "type": "Lch/uzh/ifi/seal/competitor/controller/CompetitorController",
+            "owner": "ch/uzh/ifi/seal/pricing/controller/PricingController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "relativePricingService",
+            "type": "Lch/uzh/ifi/seal/pricing/service/RelativePricingService",
+            "owner": "ch/uzh/ifi/seal/pricing/controller/PricingController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "competitorComparisonService",
+            "type": "Lch/uzh/ifi/seal/competitor/service/CompetitorComparisonService",
+            "owner": "ch/uzh/ifi/seal/pricing/controller/PricingController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "vatRateService",
+            "type": "Lch/uzh/ifi/seal/vatrate/service/VatRateService",
+            "owner": "ch/uzh/ifi/seal/pricing/controller/PricingController",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.controller.PricingController.setBestPriceForProduct",
+        "purityType": "ArgumentModifier, Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [
+          {
+            "argumentIndex": 0,
+            "hasDirectAccess": true,
+            "isDynamicEffect": false,
+            "owner": "",
+            "name": "",
+            "originOwner": "",
+            "originName": ""
+          }
+        ],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.competitor.controller.CompetitorController",
+            "name": "crawlCompetitors",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService",
+            "name": "findBestCompetitorSalesInformation",
+            "originOwner": "ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService",
+            "originName": "findBestCompetitorSalesInformation",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.ProfitService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.ProfitService.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.ProfitService.calculateProfit",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.marketing.service.MarketingInformationService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.marketing.service.MarketingInformationService.\u003cinit\u003e",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "writerService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/WriterService",
+            "owner": "ch/uzh/ifi/seal/marketing/service/MarketingInformationService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.security.AccessController",
+            "originName": "doPrivileged",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.marketing.service.MarketingInformationService.findMarketingInformationForProduct",
+        "purityType": "FieldModifier, Native",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "writerService",
+            "type": "Lch/uzh/ifi/seal/advertisement/service/WriterService",
+            "owner": "ch/uzh/ifi/seal/marketing/service/MarketingInformationService",
+            "hasDirectAccess": false,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [
+              {
+                "name": "writerService",
+                "owner": "ch.uzh.ifi.seal.marketing.service.MarketingInformationService",
+                "desc": "ch.uzh.ifi.seal.advertisement.service.WriterService;",
+                "isThisField": true,
+                "isDynamicEffect": false
+              }
+            ],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "writeDescription",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.WriterService",
+            "name": "writeTagline",
+            "originOwner": "sun.misc.Unsafe",
+            "originName": "compareAndSwapLong",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.image.model.ProductImage",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.image.model.ProductImage.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [
+          "java.lang.String",
+          "int",
+          "int",
+          "double"
+        ],
+        "fieldModifiers": [
+          {
+            "name": "heightPx",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/image/model/ProductImage",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              2
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "sizeKB",
+            "type": "double",
+            "owner": "ch/uzh/ifi/seal/image/model/ProductImage",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              3
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "FileName",
+            "type": "Ljava/lang/String",
+            "owner": "ch/uzh/ifi/seal/image/model/ProductImage",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              0
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "widthPx",
+            "type": "int",
+            "owner": "ch/uzh/ifi/seal/image/model/ProductImage",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [
+              1
+            ],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.pricing.service.TrendFactorHelper",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.TrendFactorHelper.percentage",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "int",
+          "double"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0,
+            1
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.TrendFactorHelper.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.pricing.service.TrendFactorHelper.calculateTrendFactor",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.pricing.model.Price"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.helper.YoutubeApi",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.helper.YoutubeApi.\u003cinit\u003e",
+        "purityType": "Stateless",
+        "methodArguments": [],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.helper.YoutubeApi.upload",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.advertisement.model.Video"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.helper.YoutubeApi.downloadVideo",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "java.lang.String"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      }
+    ]
+  },
+  {
+    "fullName": "ch.uzh.ifi.seal.advertisement.service.SpamService",
+    "methodMap": [
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.SpamService.\u003cinit\u003e",
+        "purityType": "FieldModifier",
+        "methodArguments": [],
+        "fieldModifiers": [
+          {
+            "name": "logger",
+            "type": "Lch/uzh/ifi/seal/log/Logger",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/SpamService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          },
+          {
+            "name": "emailClient",
+            "type": "Lch/uzh/ifi/seal/email/service/EmailClient",
+            "owner": "ch/uzh/ifi/seal/advertisement/service/SpamService",
+            "hasDirectAccess": true,
+            "dependsOnParameterFromIndex": [],
+            "fieldDependencies": [],
+            "staticFieldDependencies": []
+          }
+        ],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.SpamService.sendSpam",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.util.List"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "ch.uzh.ifi.seal.customer.service.CustomerService",
+            "name": "loadCustomers",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "ch.uzh.ifi.seal.advertisement.service.SpamService",
+            "name": "getEmailAddresses",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          }
+        ]
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.SpamService.sendSpam",
+        "purityType": "Stateless",
+        "methodArguments": [
+          "ch.uzh.ifi.seal.product.model.Product",
+          "java.util.Set"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [],
+          "dependsOnThis": false
+        },
+        "nativeEffects": []
+      },
+      {
+        "name": "ch.uzh.ifi.seal.advertisement.service.SpamService.getEmailAddresses",
+        "purityType": "Native",
+        "methodArguments": [
+          "java.util.Set"
+        ],
+        "fieldModifiers": [],
+        "staticFieldModifiers": [],
+        "argumentModifiers": [],
+        "returnDependency": {
+          "staticFieldDependencies": [],
+          "fieldDependencies": [],
+          "indexOfDependentArguments": [
+            0
+          ],
+          "dependsOnThis": false
+        },
+        "nativeEffects": [
+          {
+            "owner": "java.util.HashSet",
+            "name": "\u003cinit\u003e",
+            "originOwner": "java.lang.Float",
+            "originName": "floatToRawIntBits",
+            "isDynamicEffect": false
+          },
+          {
+            "owner": "java.util.Set",
+            "name": "add",
+            "originOwner": "java.util.Set",
+            "originName": "add",
+            "isDynamicEffect": false
+          }
+        ]
       }
     ]
   }

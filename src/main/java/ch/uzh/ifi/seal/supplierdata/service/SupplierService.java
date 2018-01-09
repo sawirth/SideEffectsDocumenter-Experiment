@@ -6,11 +6,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SupplierService {
+
+    /**
+     * Purity: Native   <br>
+     * 
+     * The method calls native code:
+     * <ul>
+     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
+     * </ul>
+     */
     public Set<Supplier> getSwissSuppliers() {
-        return new HashSet<>(Arrays.asList(
-                new Supplier("Tech 24"),
-                new Supplier("BGS GmbH"),
-                new Supplier("Onlineboss")
-        ));
+        return new HashSet<>(Arrays.asList(new Supplier("Tech 24"), new Supplier("BGS GmbH"), new Supplier("Onlineboss")));
     }
 }
