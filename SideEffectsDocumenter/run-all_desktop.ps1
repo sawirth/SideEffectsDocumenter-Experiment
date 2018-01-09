@@ -53,4 +53,4 @@ else
 
 # Second: start SideEffectsDocumenter
 $main = 'main.Main'
-& $java8 -jar $jar $javaRoot -p $puranoPath -e $showExtended -io $ioBlacklistPath -r $replaceOriginalFiles
+& $java8 -jar $jar $javaRoot -p $puranoPath -e $showExtended -io $ioBlacklistPath -r $replaceOriginalFiles -l -t
