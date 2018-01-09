@@ -36,11 +36,14 @@ public class SpamService {
     }
 
     public void sendSpam(List<Price> priceList) {
-        //TODO Hauptstatement Task2
         CustomerService customerService = new CustomerService();
         Set<Customer> customers = customerService.loadCustomers();
         Set<String> emailAddresses = getEmailAddresses(customers);
-
+        for (Price price : priceList) {
+            for (String email : emailAddresses) {
+                emailClient.sendMail(email, "SPAM", Integer.toString(price.getValue()));
+            }
+        }
     }
 
     private Set<String> getEmailAddresses(Set<Customer> customers) {

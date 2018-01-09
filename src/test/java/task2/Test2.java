@@ -1,6 +1,5 @@
 package task2;
 
-import ch.uzh.ifi.seal.advertisement.service.SpamService;
 import ch.uzh.ifi.seal.pricing.model.Price;
 import ch.uzh.ifi.seal.pricing.service.PricingService;
 import org.junit.Assert;
@@ -12,46 +11,33 @@ import java.util.List;
 public class Test2 {
     @Test
     public void task2() {
-        //
-        // === EXPERIMENT CODE - DO NOT CHANGE! ===
-        //
+
+        // ==============================================================
+        // ==== EXPERIMENT CODE: DO NOT CHANGE ANYTHING IN THIS FILE ====
+        // ==============================================================
+
         List<Price> prices = new ArrayList<>(Arrays.asList(
                 new Price(1),
+                new Price(5),
+                new Price(4),
+                new Price(2),
+                new Price(7),
                 new Price(1),
-                new Price(1),
-                new Price(1),
-                new Price(1),
-                new Price(1),
-                new Price(1),
-                new Price(1),
-                new Price(1),
-                new Price(1)
+                new Price(2),
+                new Price(5),
+                new Price(8),
+                new Price(2)
         ));
 
-        //Verify Prices
         PricingService pricingService = new PricingService();
-        pricingService.verifyPrices(prices);
 
-        //Spam
-        SpamService spamService = new SpamService();
-        spamService.sendSpam(prices);
+        int sum = 0;
+        for (Price price : prices) {
+            pricingService.verifyPrice(price, prices);
+            sum += price.getValue();
+        }
 
-        //TODO more branches
-
-
-        //
-        // === END OF EXPERIMENT CODE ===
-        //
-
-
-        // =========================================
-        // What is the expected sum over all prices?
-        // =========================================
-        int expectedSum = 10;
-
-
-        //Verification
-        int actualSum = prices.stream().mapToInt(Price::getValue).sum();
-        Assert.assertEquals(expectedSum, actualSum);
+        int expectedSum = 37;
+        Assert.assertEquals(expectedSum, sum);
     }
 }
