@@ -10,14 +10,7 @@ import java.util.Set;
 public class CompetitorController {
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link CrawlerFactory#loadCrawlers} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link Set#add}      </li>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     public Set<CompetitorSalesInformation> crawlCompetitors(Product product) {
         Set<ICompetitorCrawler> crawlers = CrawlerFactory.loadCrawlers();

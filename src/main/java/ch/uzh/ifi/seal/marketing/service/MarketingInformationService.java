@@ -28,7 +28,6 @@ public class MarketingInformationService {
      * 
      * The method calls native code:
      * <ul>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
      * <li>      {@link WriterService#writeTagline} (origin: {@link sun.misc.Unsafe#compareAndSwapLong})      </li>
      * <li>      {@link WriterService#writeDescription} (origin: {@link sun.misc.Unsafe#compareAndSwapLong})      </li>
      * </ul>

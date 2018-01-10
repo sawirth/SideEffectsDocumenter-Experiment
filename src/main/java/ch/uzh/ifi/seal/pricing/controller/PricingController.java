@@ -11,18 +11,14 @@ import ch.uzh.ifi.seal.product.model.Product;
 import ch.uzh.ifi.seal.competitor.service.CompetitorComparisonService;
 import ch.uzh.ifi.seal.supplierdata.model.SupplierPurchaseData;
 import ch.uzh.ifi.seal.vatrate.service.VatRateService;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
 public class PricingController {
 
     private final CompetitorController competitorController;
-
     private final CompetitorComparisonService competitorComparisonService;
-
     private final RelativePricingService relativePricingService;
-
     private final VatRateService vatRateService;
 
     /**
@@ -36,17 +32,11 @@ public class PricingController {
     }
 
     /**
-     * Purity: ArgumentModifier, Native   <br>
+     * Purity: ArgumentModifier   <br>
      * 
      * Modifies the following arguments:
      * <ul>
      * <li>      product      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link CompetitorController#crawlCompetitors} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link CompetitorComparisonService#findBestCompetitorSalesInformation}      </li>
      * </ul>
      */
     public void setBestPriceForProduct(Product product) {
@@ -70,12 +60,12 @@ public class PricingController {
     }
 
     /**
-     * Purity: Stateful   <br>
+     * Purity: Stateless   <br>
      * 
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: supplierPurchaseDataList (List<SupplierPurchaseData>)      </li>
-     * <li>      Field of subclass: SupplierPurchaseData.priceExcl (double)      </li>
+     * <li>      Field of argument: SupplierPurchaseData.priceExcl (double)      </li>
      * </ul>
      */
     private double findBestPurchasePrice(List<SupplierPurchaseData> supplierPurchaseDataList) {

@@ -8,14 +8,9 @@ import java.util.Set;
 public class CustomerService {
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     public Set<Customer> loadCustomers() {
-        return new HashSet<>(Arrays.asList(new Customer("Sepp Trütsch", "sepp@trütsch.ch", "Zurich"), new Customer("Max Mustermann", "max.mustermann@muster.ch", "Basel"), new Customer("Hans Wurst", "theWurster@gmx.ch", "Bern")));
+        return new HashSet<>(Arrays.asList(new Customer("Sepp Trï¿½tsch", "sepp@trï¿½tsch.ch", "Zurich"), new Customer("Max Mustermann", "max.mustermann@muster.ch", "Basel"), new Customer("Hans Wurst", "theWurster@gmx.ch", "Bern")));
     }
 }

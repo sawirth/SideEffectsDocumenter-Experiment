@@ -16,15 +16,10 @@ import java.util.Set;
 public class AdvertisementController {
 
     private final AdvertisementPageService advertisementPageService;
-
     private final CustomerService customerService;
-
     private final SpamService spamService;
-
     private final YoutubeService youtubeService;
-
     private final VideoEditor videoEditor;
-
     private final DealOfferService dealOfferService;
 
     /**
@@ -54,9 +49,6 @@ public class AdvertisementController {
      * 
      * The method calls native code:
      * <ul>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link CustomerService#loadCustomers} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link Set#add}      </li>
      * <li>      {@link AdvertisementPageService#createNewAdvertisementPage} (origin: {@link sun.misc.Unsafe#compareAndSwapLong})      </li>
      * <li>      {@link DealOfferService#makeDeal} (origin: {@link java.io.Writer#close} - Possible I/O)      </li>
      * </ul>

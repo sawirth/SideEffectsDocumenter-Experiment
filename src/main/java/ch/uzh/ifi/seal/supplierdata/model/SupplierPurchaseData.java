@@ -5,19 +5,12 @@ import ch.uzh.ifi.seal.currency.model.Currency;
 public class SupplierPurchaseData {
 
     public final Supplier Supplier;
-
     public final String Ean;
-
     public final String ManufacturerKey;
-
     public final String ProductName;
-
     public final String Brand;
-
     public final int Stock;
-
     public final double priceExcl;
-
     public final Currency currency;
 
     /**

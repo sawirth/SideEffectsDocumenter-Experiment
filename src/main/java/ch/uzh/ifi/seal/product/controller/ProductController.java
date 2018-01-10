@@ -21,12 +21,7 @@ public class ProductController {
     private final YoutubeService youtubeService;
 
     /**
-     * Purity: FieldModifier, Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link MarketingInformationService#MarketingInformationService()} (origin: {@link java.security.AccessController#doPrivileged})      </li>
-     * </ul>
+     * Purity: FieldModifier   <br>
      */
     public ProductController() {
         productImageService = new ProductImageService();
@@ -40,9 +35,6 @@ public class ProductController {
      * 
      * The method calls native code:
      * <ul>
-     * <li>      {@link ProductImageService#uploadImagesFromDisk} (origin: {@link java.util.Collection#toArray})      </li>
-     * <li>      {@link ArrayList#ArrayList()} (origin: {@link java.util.Collection#toArray})      </li>
-     * <li>      {@link PropertyImport#getPropertiesForProduct} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
      * <li>      {@link MarketingInformationService#findMarketingInformationForProduct} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
      * </ul>
      */

@@ -26,12 +26,7 @@ public class DataSource {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link ArrayList#ArrayList()} (origin: {@link java.util.Collection#toArray})      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     public List<SupplierPurchaseData> download() {
         return new ArrayList<>(Arrays.asList(new SupplierPurchaseData(supplier, "9783598215001", "ACK-45L", "Wheel", "Buggli", 25, 25.95, Currency.CHF), new SupplierPurchaseData(supplier, "9783598215063", "BUT-11", "Sandwich", "Tutru", 99, 55.54, Currency.CHF)));

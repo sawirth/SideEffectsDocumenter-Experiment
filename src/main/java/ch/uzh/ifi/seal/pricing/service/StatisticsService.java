@@ -10,16 +10,11 @@ public class StatisticsService {
     private final double boundary = 1.5;
 
     /**
-     * Purity: Native   <br>
+     * Purity: Stateless   <br>
      * 
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: prices (List<Price>)      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link StatisticsService#getSortedList} (origin: {@link java.util.Collection#toArray})      </li>
      * </ul>
      */
     public double getMedian(List<Price> prices) {
@@ -37,16 +32,11 @@ public class StatisticsService {
     }
 
     /**
-     * Purity: Native   <br>
+     * Purity: Stateless   <br>
      * 
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: prices (List<Price>)      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link ArrayList#ArrayList()} (origin: {@link java.util.Collection#toArray})      </li>
      * </ul>
      */
     private List<Price> getSortedList(List<Price> prices) {
@@ -65,18 +55,17 @@ public class StatisticsService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
+     * Purity: ArgumentModifier   <br>
+     *
+     * Modifies the following arguments:
+     * <ul>
+     * <li>    prices (via {@link StatisticsService#standardDeviation(List)})   </li>
+     * </ul>
+     *
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: price (Price)      </li>
      * <li>      Argument: prices (List<Price>)      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link StatisticsService#getMedian} (origin: {@link java.util.Collection#toArray})      </li>
-     * <li>      {@link StatisticsService#standardDeviation} (origin: {@link java.lang.StrictMath#sqrt})      </li>
      * </ul>
      */
     public boolean isUpperOutlier(Price price, List<Price> prices) {
@@ -86,18 +75,17 @@ public class StatisticsService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
+     * Purity: ArgumentModifier   <br>
+     *
+     * Modifies the following arguments:
+     * <ul>
+     * <li>    prices (via {@link StatisticsService#standardDeviation(List)})    </li>
+     * </ul>
+     *
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: price (Price)      </li>
      * <li>      Argument: prices (List<Price>)      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link StatisticsService#standardDeviation} (origin: {@link java.lang.StrictMath#sqrt})      </li>
-     * <li>      {@link StatisticsService#getMedian} (origin: {@link java.util.Collection#toArray})      </li>
      * </ul>
      */
     public boolean isLowerOutlier(Price price, List<Price> prices) {
@@ -107,17 +95,16 @@ public class StatisticsService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
+     * Purity: ArgumentModifier   <br>
+     *
+     * Modifies the following argument:
+     * <ul>
+     * <li>    prices    </li>
+     * </ul>
+     *
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: prices (List<Price>)      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link java.lang.Math#sqrt} (origin: {@link java.lang.StrictMath#sqrt})      </li>
-     * <li>      {@link java.lang.Math#pow} (origin: {@link java.lang.StrictMath#pow})      </li>
      * </ul>
      */
     private double standardDeviation(List<Price> prices) {

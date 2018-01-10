@@ -8,12 +8,7 @@ import java.util.List;
 public class ProductImageService {
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link ArrayList#ArrayList()} (origin: {@link java.util.Collection#toArray})      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     public List<ProductImage> uploadImagesFromDisk(String folderPath) {
         return new ArrayList<>(Arrays.asList(new ProductImage("Front.jpeg", 500, 500, 755), new ProductImage("Packing.jpeg", 1000, 1000, 1200), new ProductImage("Usage.jpg", 888, 500, 862)));

@@ -17,12 +17,7 @@ public class PriceHistoryService {
     private final List<Integer> priceHistory = new ArrayList<>(Arrays.asList(1, 2, 1, 2, 1, 1, 2, 3, 1));
 
     /**
-     * Purity: FieldModifier, Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link ArrayList#ArrayList()} (origin: {@link java.util.Collection#toArray})      </li>
-     * </ul>
+     * Purity: FieldModifier   <br>
      */
     public PriceHistoryService() {
         logger = new Logger();

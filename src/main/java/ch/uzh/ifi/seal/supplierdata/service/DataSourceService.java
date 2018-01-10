@@ -10,21 +10,16 @@ import java.util.List;
 public class DataSourceService {
 
     /**
-     * Purity: Native   <br>
+     * Purity: Stateless   <br>
      * 
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: productName (String)      </li>
      * <li>      Argument: manufacturerKey (String)      </li>
      * <li>      Argument: ean (String)      </li>
-     * <li>      Field of subclass: SupplierPurchaseData.ProductName (java.lang.String;)      </li>
-     * <li>      Field of subclass: SupplierPurchaseData.Ean (java.lang.String;)      </li>
-     * <li>      Field of subclass: SupplierPurchaseData.ManufacturerKey (java.lang.String;)      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link DataSource#download} (origin: {@link java.util.Collection#toArray})      </li>
+     * <li>      Field of argument: SupplierPurchaseData.ProductName (java.lang.String;)      </li>
+     * <li>      Field of argument: SupplierPurchaseData.Ean (java.lang.String;)      </li>
+     * <li>      Field of argument: SupplierPurchaseData.ManufacturerKey (java.lang.String;)      </li>
      * </ul>
      */
     public SupplierPurchaseData findSupplierPurchaseData(Supplier supplier, String productName, String manufacturerKey, String ean) {
@@ -39,7 +34,7 @@ public class DataSourceService {
     }
 
     /**
-     * Purity: Stateful   <br>
+     * Purity: Stateless   <br>
      * 
      * Return value depends on the following:
      * <ul>
@@ -47,9 +42,9 @@ public class DataSourceService {
      * <li>      Argument: productName (String)      </li>
      * <li>      Argument: manufacturerKey (String)      </li>
      * <li>      Argument: ean (String)      </li>
-     * <li>      Field of subclass: SupplierPurchaseData.ProductName (java.lang.String;)      </li>
-     * <li>      Field of subclass: SupplierPurchaseData.ManufacturerKey (java.lang.String;)      </li>
-     * <li>      Field of subclass: SupplierPurchaseData.Ean (java.lang.String;)      </li>
+     * <li>      Field of argument: SupplierPurchaseData.ProductName (java.lang.String;)      </li>
+     * <li>      Field of argument: SupplierPurchaseData.ManufacturerKey (java.lang.String;)      </li>
+     * <li>      Field of argument: SupplierPurchaseData.Ean (java.lang.String;)      </li>
      * </ul>
      */
     private List<SupplierPurchaseData> findMatchingData(List<SupplierPurchaseData> supplierPurchaseDatas, String productName, String manufacturerKey, String ean) {

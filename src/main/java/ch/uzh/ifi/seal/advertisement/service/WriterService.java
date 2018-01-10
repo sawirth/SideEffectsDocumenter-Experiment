@@ -7,12 +7,13 @@ import java.util.concurrent.ThreadLocalRandom;
 public class WriterService {
 
     private final String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
     private final String lower = upper.toLowerCase();
-
     private final String alphabet = upper + lower;
-
     private Random random;
+
+    public WriterService(){
+
+    }
 
     /**
      * Purity: FieldModifier, Native   <br>

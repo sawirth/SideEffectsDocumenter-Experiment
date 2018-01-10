@@ -18,16 +18,7 @@ public class PriceController {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link SupplierService#getSwissSuppliers} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link Set#add}      </li>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link Set#removeAll}      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     public void controlPrices() {
         SupplierService supplierService = new SupplierService();

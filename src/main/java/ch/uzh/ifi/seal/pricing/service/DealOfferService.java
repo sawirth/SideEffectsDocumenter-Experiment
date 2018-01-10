@@ -11,6 +11,9 @@ public class DealOfferService {
      * Purity: ArgumentModifier, Native   <br>
      * 
      * Modifies the following arguments:
+     * <ul>
+     * <li>    product     </li>
+     * </ul>
      * 
      * The method calls native code:
      * <ul>

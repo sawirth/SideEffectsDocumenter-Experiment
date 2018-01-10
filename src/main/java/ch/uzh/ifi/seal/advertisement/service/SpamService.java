@@ -42,13 +42,7 @@ public class SpamService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link CustomerService#loadCustomers} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link SpamService#getEmailAddresses} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     public void sendSpam(List<Price> priceList) {
         CustomerService customerService = new CustomerService();
@@ -62,17 +56,11 @@ public class SpamService {
     }
 
     /**
-     * Purity: Native   <br>
+     * Purity: Stateless   <br>
      * 
      * Return value depends on the following:
      * <ul>
      * <li>      Argument: customers (Set<Customer>)      </li>
-     * </ul>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link Set#add}      </li>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
      * </ul>
      */
     private Set<String> getEmailAddresses(Set<Customer> customers) {

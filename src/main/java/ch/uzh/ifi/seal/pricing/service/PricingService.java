@@ -31,13 +31,11 @@ public class PricingService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
+     * Purity: Argument Modifier   <br>
+     *
+     * Modifies the following arguments:
      * <ul>
-     * <li>      {@link PriceController#controlPrices} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link SpamService#sendSpam} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * <li>      {@link PricingService#comparePrices} (origin: {@link java.util.Collection#toArray})      </li>
+     * <li>     prices (via {@link PricingService#comparePrices(Price, List)})     </li>
      * </ul>
      */
     public void verifyPrice(Price price, List<Price> prices) {
@@ -144,12 +142,11 @@ public class PricingService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
+     * Purity: ArgumentModifier   <br>
+     *
+     * Modifies the following arguments:
      * <ul>
-     * <li>      {@link PricingService#comparePriceToOutlier} (origin: {@link java.util.Collection#toArray})      </li>
-     * <li>      {@link PricingService#comparePriceToMedian} (origin: {@link java.util.Collection#toArray})      </li>
+     * <li>    prices (via {@link PricingService#comparePriceToOutlier(Price, List)})    </li>
      * </ul>
      */
     private void comparePrices(Price price, List<Price> prices) {
@@ -158,12 +155,7 @@ public class PricingService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link StatisticsService#getMedian} (origin: {@link java.util.Collection#toArray})      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     private void comparePriceToMedian(Price price, List<Price> prices) {
         int size = prices.size();
@@ -182,12 +174,11 @@ public class PricingService {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
+     * Purity: ArgumentModifier   <br>
+     * Modifies the following arguments:
      * <ul>
-     * <li>      {@link StatisticsService#isUpperOutlier} (origin: {@link java.util.Collection#toArray})      </li>
-     * <li>      {@link StatisticsService#isLowerOutlier} (origin: {@link java.util.Collection#toArray})      </li>
+     * <li>    prices (via {@link StatisticsService#isUpperOutlier(Price, List)}    </li>
+     * <li>    prices (via {@link StatisticsService#isLowerOutlier(Price, List)} (Price, List)}    </li>
      * </ul>
      */
     private void comparePriceToOutlier(Price price, List<Price> prices) {

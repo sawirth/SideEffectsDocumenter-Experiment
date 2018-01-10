@@ -8,18 +8,11 @@ import java.util.List;
 public class AdvertisementPageService {
 
     private final ImageProviderService imageProviderService;
-
     private final PhotoshopService photoshopService;
-
     private final WriterService writerService;
 
     /**
-     * Purity: FieldModifier, Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link WriterService#WriterService()} (origin: {@link java.security.AccessController#doPrivileged})      </li>
-     * </ul>
+     * Purity: FieldModifier   <br>
      */
     public AdvertisementPageService() {
         imageProviderService = new ImageProviderService();

@@ -29,9 +29,9 @@ public class CompetitorComparisonService {
      * <ul>
      * <li>      Argument: competitorSalesInformation (CompetitorSalesInformation)      </li>
      * <li>      Argument: ourDeliveryDuration (int)      </li>
-     * <li>      Field of subclass: CompetitorSalesInformation.Price (double)      </li>
-     * <li>      Field of subclass: CompetitorSalesInformation.Competitor (java.lang.String;)      </li>
-     * <li>      Field of subclass: CompetitorSalesInformation.DeliveryDuration (int)      </li>
+     * <li>      Field of argument: CompetitorSalesInformation.Price (double)      </li>
+     * <li>      Field of argument: CompetitorSalesInformation.Competitor (java.lang.String;)      </li>
+     * <li>      Field of argument: CompetitorSalesInformation.DeliveryDuration (int)      </li>
      * </ul>
      */
     private double getPriceWithPenalty(CompetitorSalesInformation competitorSalesInformation, int ourDeliveryDuration) {

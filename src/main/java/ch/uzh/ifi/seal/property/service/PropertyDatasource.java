@@ -25,12 +25,7 @@ public class PropertyDatasource {
     }
 
     /**
-     * Purity: Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link HashSet#HashSet()} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
-     * </ul>
+     * Purity: Stateless   <br>
      */
     public Set<Property> findDimensions(Product product) {
         return new HashSet<>(Arrays.asList(new Property("Length", "30cm"), new Property("Width", "25cm"), new Property("Height", "33cm"), new Property("Weight", "1.2kg")));
