@@ -34,7 +34,7 @@ public class PriceController {
     }
 
     /**
-     * Purity: Stateful   <br>
+     * Purity: OO Stateless   <br>
      * 
      * Return value depends on the following:
      * <ul>

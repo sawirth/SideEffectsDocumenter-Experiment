@@ -13,14 +13,14 @@ public class PurityExplanation {
     }
 
     /**
-     *  Purity: Stateful   <br>
+     *  Purity: OO Stateless   <br>
      *
      *  Return value depends on the following:
      *  <ul>
      *  <li>    Argument: a (int)     </li>
      *  </ul>
      */
-    public int stateful(int a) {
+    public int oo_stateless(int a) {
         return a + this.field;
     }
 
