@@ -45,18 +45,18 @@ public class PricingService {
 
         Price lowestPrice = getLowestPrice(prices);
         if (lowestPrice != null) {
-            if (lowestPrice.getValue() < price.getValue()) {
+            if (lowestPrice.value < price.value) {
                 logger.log("Price is higher than the lowest price");
-            } else if (lowestPrice.getValue() > price.getValue()) {
+            } else if (lowestPrice.value > price.value) {
                 logger.log("Price is lower than the lowest price");
             }
         }
 
         Price highestPrice = getHighestPrice(prices);
         if (highestPrice != null) {
-            if (highestPrice.getValue() > price.getValue()) {
+            if (highestPrice.value > price.value) {
                 logger.log("Price is lower than the highest price");
-            } else if (highestPrice.getValue() < price.getValue()) {
+            } else if (highestPrice.value < price.value) {
                 logger.log("Price is higher than the highest price");
             }
         }
@@ -70,7 +70,7 @@ public class PricingService {
     private double calculateProportionToAveragePrice(Price price, List<Price> prices) {
         int sum = 0;
         for (Price p : prices) {
-            sum += p.getValue();
+            sum += p.value;
         }
 
         return getProportionToAverage(price, prices, sum);
@@ -78,7 +78,7 @@ public class PricingService {
 
     private double getProportionToAverage(Price price, List<Price> prices, int sum) {
         double averagePrice = sum / prices.size();
-        return price.getValue() / averagePrice;
+        return price.value / averagePrice;
     }
 
     private void verify(Price price) {
@@ -95,7 +95,7 @@ public class PricingService {
         Price highestPrice = prices.get(0);
 
         for (Price price : prices) {
-            if (price.getValue() > highestPrice.getValue()) {
+            if (price.value > highestPrice.value) {
                 highestPrice = price;
             }
         }
@@ -116,9 +116,9 @@ public class PricingService {
 
         double median = statisticsService.getMedian(prices);
 
-        if (price.getValue() < median) {
+        if (price.value < median) {
             logger.log("Price is below median");
-        } else if (price.getValue() > median) {
+        } else if (price.value > median) {
             logger.log("Price is above median");
         } else {
             logger.log("Price is the median");
@@ -146,7 +146,7 @@ public class PricingService {
         Price highestPrice = prices.get(0);
 
         for (Price price : prices) {
-            if (price.getValue() < highestPrice.getValue()) {
+            if (price.value < highestPrice.value) {
                 highestPrice = price;
             }
         }

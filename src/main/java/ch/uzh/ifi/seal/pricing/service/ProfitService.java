@@ -8,6 +8,6 @@ public class ProfitService {
         VatRateService vatRateService = new VatRateService();
         RelativePricingService relativePricingService = new RelativePricingService();
         double margin = relativePricingService.getCategoryFraction("Tablet") + relativePricingService.getBrandFraction("Apple");
-        return (price.getValue() * margin * vatRateService.getVatRateFraction("Switzerland"))  - price.getValue();
+        return (price.value* margin * vatRateService.getVatRateFraction("Switzerland"))  - price.value;
     }
 }

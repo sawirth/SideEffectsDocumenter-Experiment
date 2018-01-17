@@ -18,8 +18,8 @@ public class PriceHistoryService {
     }
 
     public void checkHistoryOfPrice(Price price) {
-        Price newPrice = new Price(price.getValue());
-        int currentPrice = price.getValue();
+        Price newPrice = new Price(price.value);
+        int currentPrice = price.value;
         boolean isHigherThanHistory = isHigherThanHistory(price);
         if (isHigherThanHistory) {
             logger.log("New highest price");
@@ -43,7 +43,8 @@ public class PriceHistoryService {
         }
 
         Price futurePrice = calculateFuturePrice(newPrice);
-        if (futurePrice.getValue() > price.getValue()) {
+        futurePrice.value *= 1.001;
+        if (futurePrice.value > price.value) {
             logger.log("Future price might be higher than right now");
         }
     }
@@ -51,7 +52,7 @@ public class PriceHistoryService {
     private boolean isHigherThanHistory(Price price) {
         for (Integer integer : priceHistory)
         {
-            if (price.getValue() > integer) {
+            if (price.value > integer) {
                 return true;
             }
         }
@@ -62,7 +63,7 @@ public class PriceHistoryService {
     private boolean isLowerThanHistory(Price price) {
         for (Integer integer : priceHistory)
         {
-            if (price.getValue() < integer) {
+            if (price.value < integer) {
                 return true;
             }
         }
@@ -71,8 +72,8 @@ public class PriceHistoryService {
     }
 
     private Price calculateFuturePrice(Price price) {
-        double newPrice = price.getValue() * TrendFactorHelper.calculateTrendFactor(price);
-        price.setValue((int) newPrice);
+        double newPrice = price.value * TrendFactorHelper.calculateTrendFactor(price);
+        price.value = (int) newPrice;
         return price;
     }
 }

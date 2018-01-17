@@ -41,7 +41,7 @@ public class SpamService {
         Set<String> emailAddresses = getEmailAddresses(customers);
         for (Price price : priceList) {
             for (String email : emailAddresses) {
-                emailClient.sendMail(email, "SPAM", Integer.toString(price.getValue()));
+                emailClient.sendMail(email, "SPAM", Integer.toString(price.value));
             }
         }
     }

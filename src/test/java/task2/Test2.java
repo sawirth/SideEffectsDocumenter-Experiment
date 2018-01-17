@@ -34,7 +34,7 @@ public class Test2 {
         int sum = 0;
         for (Price price : prices) {
             pricingService.verifyPrice(price, prices);
-            sum += price.getValue();
+            sum += price.value;
         }
 
         int expectedSum = 37;

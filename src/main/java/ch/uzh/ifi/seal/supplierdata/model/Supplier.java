@@ -10,6 +10,6 @@ public class Supplier {
     }
 
     public boolean acceptPrice(Price price) {
-        return price.getValue() >= 0.5 || price.getValue() <= 100;
+        return price.value >= 0.5 || price.value <= 100;
     }
 }
