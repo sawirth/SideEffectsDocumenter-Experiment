@@ -13,7 +13,9 @@ import java.util.List;
 public class Test1 {
     @Test
     public void Task1() {
-        //Sollte min. 5 Statements haben
+        // ==============================================================
+        // ==== EXPERIMENT CODE: DO NOT CHANGE ANYTHING IN THIS FILE ====
+        // ==============================================================
 
         //Suchen nach passenden Lieferantendaten
         SupplierDataController supplierDataController = new SupplierDataController();
@@ -33,7 +35,5 @@ public class Test1 {
         //Werbung erstellen, kaufen, live schalten
         AdvertisementController advertisementController = new AdvertisementController();
         advertisementController.createTheUltimateAdvertisement(product);
-
-        //Produkt für den Shop freischalten (Aktivieren, Cachen)
     }
 }
