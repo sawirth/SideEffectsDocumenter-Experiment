@@ -42,6 +42,7 @@ task task2 (type: Test) {
     group = "experiment"
     include '**/Test2*'
     exclude 'necmiexperiment/**'
+    exclude '**/Test1'
     outputs.upToDateWhen {false}
 }
 
