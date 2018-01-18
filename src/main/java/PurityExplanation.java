@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class PurityExplanation {
 
@@ -61,10 +63,18 @@ public class PurityExplanation {
      * The method calls native code:
      * <ul>
      * <li>    {@link PurityExplanation#nativeMethod()}    </li>
+     * <li>    {@link FileWriter#write(String)} (Possible I/O) </li>
      * </ul>
      */
     public void nativeCall() {
         nativeMethod();
+
+        try {
+            FileWriter writer = new FileWriter("file.txt");
+            writer.write("text in file");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private native void nativeMethod();
