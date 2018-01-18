@@ -23,6 +23,7 @@ test {
 
 task task1 (type: Test, dependsOn: ['test1', 'ctrl1']) {
     exclude 'necmiexperiment/**'
+    exclude '**/Test2*'
     group = "experiment"
 }
 
