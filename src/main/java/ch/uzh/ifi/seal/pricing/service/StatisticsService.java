@@ -119,6 +119,10 @@ public class StatisticsService {
             sumSquared += Math.pow(prices.get(i).value - mean, 2);
         }
         double meanSquared = sumSquared / N;
+
+        // ==================================================================
+        // THIS IS THE ERROR YOU ARE LOOKING FOR :) Delete the following line
+        // ==================================================================
         prices.get(0).value = 2;
         return Math.sqrt(mean);
     }

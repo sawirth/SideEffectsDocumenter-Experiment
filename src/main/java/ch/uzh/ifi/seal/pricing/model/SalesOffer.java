@@ -108,13 +108,15 @@ public abstract class SalesOffer {
      */
     public void activateSalesOffer() {
         this.deleteDate = null;
-        //comment the following try-catch out to solve it
+
+        // ===================================================================
+        // ========= YOU FOUND IT :) Delete everything after this  ===========
+        // ===================================================================
+
         try {
             PrintWriter writer = new PrintWriter("./resources/task1_db.txt");
             writer.print(this.priceExcl * vatRateFraction);
             writer.close();
-        } catch (FileNotFoundException e) {
-        //do nothing
-        }
+        } catch (FileNotFoundException e) {}
     }
 }
