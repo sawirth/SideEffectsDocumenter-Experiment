@@ -70,6 +70,10 @@ public class StatisticsService {
         }
 
         double meanSquared = sumSquared / N;
+
+        // ==================================================================
+        // THIS IS THE ERROR YOU ARE LOOKING FOR :) Delete the following line
+        // ==================================================================
         prices.get(0).value = 2;
         return Math.sqrt(mean);
     }
