@@ -102,7 +102,7 @@ public abstract class SalesOffer {
      * The method calls native code:
      * <ul>
      * <li>      {@link PrintWriter#print} (origin: {@link java.io.Writer#write} - Possible I/O)      </li>
-     * <li>      {@link PrintWriter#PrintWriter()} (origin: {@link java.io.FileOutputStream#open} - Possible I/O)      </li>
+     * <li>      {@link PrintWriter#PrintWriter} (origin: {@link java.io.FileOutputStream#open} - Possible I/O)      </li>
      * <li>      {@link PrintWriter#close} (origin: {@link java.io.Writer#close} - Possible I/O)      </li>
      * </ul>
      */

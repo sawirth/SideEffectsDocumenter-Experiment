@@ -35,7 +35,7 @@ public class ProductController {
      * 
      * The method calls native code:
      * <ul>
-     * <li>      {@link MarketingInformationService#findMarketingInformationForProduct} (origin: {@link java.lang.Float#floatToRawIntBits})      </li>
+     * <li>      {@link MarketingInformationService#findMarketingInformationForProduct}     </li>
      * </ul>
      */
     public Product createNewProduct(List<SupplierPurchaseData> purchasingData) {
