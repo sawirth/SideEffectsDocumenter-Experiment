@@ -23,12 +23,7 @@ public class AdvertisementController {
     private final DealOfferService dealOfferService;
 
     /**
-     * Purity: FieldModifier, Native   <br>
-     * 
-     * The method calls native code:
-     * <ul>
-     * <li>      {@link AdvertisementPageService#AdvertisementPageService()} (origin: {@link java.security.AccessController#doPrivileged})      </li>
-     * </ul>
+     * Purity: FieldModifier   <br>
      */
     public AdvertisementController() {
         advertisementPageService = new AdvertisementPageService();
